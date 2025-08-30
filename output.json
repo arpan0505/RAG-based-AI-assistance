@@ -1,0 +1,6122 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.0,
+    "text": " Hi guys, my name is Nitish and you are welcome to my YouTube channel."
+  },
+  {
+    "start": 4.0,
+    "end": 7.0,
+    "text": " In this video also we will continue our Langchain playlist."
+  },
+  {
+    "start": 7.0,
+    "end": 14.0,
+    "text": " Now before starting the video, I would like to give you a quick recap of what we have covered in this playlist."
+  },
+  {
+    "start": 14.0,
+    "end": 20.0,
+    "text": " I have put 15 videos in this playlist and we can divide the 15 videos into two parts."
+  },
+  {
+    "start": 20.0,
+    "end": 24.0,
+    "text": " In the first part, we covered the fundamentals of Langchain."
+  },
+  {
+    "start": 24.0,
+    "end": 30.0,
+    "text": " In which I told you about the components of Langchain and then we discussed those components one by one."
+  },
+  {
+    "start": 30.0,
+    "end": 35.0,
+    "text": " Like the components of models, prompts, chains, etc."
+  },
+  {
+    "start": 35.0,
+    "end": 42.0,
+    "text": " Then in the second part, we learned to make rag systems using Langchain."
+  },
+  {
+    "start": 42.0,
+    "end": 52.0,
+    "text": " So we covered topics like document loaders, text splitters, vector stores, retrievers and finally we learned to make rag based systems."
+  },
+  {
+    "start": 52.0,
+    "end": 54.0,
+    "text": " Now from here,"
+  },
+  {
+    "start": 54.0,
+    "end": 58.0,
+    "text": " we are going to start the third part of this playlist."
+  },
+  {
+    "start": 58.0,
+    "end": 63.0,
+    "text": " Where we will learn how to build agents using Langchain."
+  },
+  {
+    "start": 63.0,
+    "end": 67.0,
+    "text": " And in this part, I am going to add 3-4 videos."
+  },
+  {
+    "start": 67.0,
+    "end": 72.0,
+    "text": " And today's video will be the first video for this segment."
+  },
+  {
+    "start": 72.0,
+    "end": 77.0,
+    "text": " So in today's video, we are going to learn what tools are there in Langchain."
+  },
+  {
+    "start": 77.0,
+    "end": 81.0,
+    "text": " So I will explain you in detail what the concept of tools is,"
+  },
+  {
+    "start": 81.0,
+    "end": 84.0,
+    "text": " how they fit in the agent's roadmap,"
+  },
+  {
+    "start": 84.0,
+    "end": 90.0,
+    "text": " and then I will also teach you how to create different types of tools in Langchain."
+  },
+  {
+    "start": 90.0,
+    "end": 96.0,
+    "text": " On the whole, if you want to learn how to build agents using Langchain or Langraph,"
+  },
+  {
+    "start": 96.0,
+    "end": 101.0,
+    "text": " then in both the cases, you should have a good knowledge about tools."
+  },
+  {
+    "start": 101.0,
+    "end": 103.0,
+    "text": " So in that sense, today's video is super important."
+  },
+  {
+    "start": 103.0,
+    "end": 106.0,
+    "text": " So please make sure you watch this video end to end."
+  },
+  {
+    "start": 106.0,
+    "end": 108.0,
+    "text": " Now, let's start the video."
+  },
+  {
+    "start": 108.0,
+    "end": 112.0,
+    "text": " Now before moving forward in the video, I want to give you an overview."
+  },
+  {
+    "start": 112.0,
+    "end": 118.0,
+    "text": " In this segment, we are going to cover exactly what topics we are going to cover."
+  },
+  {
+    "start": 118.0,
+    "end": 122.0,
+    "text": " So first of all, we will cover tools, which is the topic of today's video."
+  },
+  {
+    "start": 122.0,
+    "end": 125.0,
+    "text": " Here we will learn to work with different types of tools."
+  },
+  {
+    "start": 125.0,
+    "end": 127.0,
+    "text": " We will also learn to make our own tools."
+  },
+  {
+    "start": 127.0,
+    "end": 132.0,
+    "text": " After that, in the next video, we will cover a concept called tool calling."
+  },
+  {
+    "start": 132.0,
+    "end": 134.0,
+    "text": " So what do you do in tool calling?"
+  },
+  {
+    "start": 134.0,
+    "end": 141.0,
+    "text": " You make the tool and connect your LLM with each other so that they can work together."
+  },
+  {
+    "start": 141.0,
+    "end": 144.0,
+    "text": " So this is the topic of our next video."
+  },
+  {
+    "start": 144.0,
+    "end": 148.0,
+    "text": " After that, we will cover the concept of agents."
+  },
+  {
+    "start": 148.0,
+    "end": 153.0,
+    "text": " Where we will make agents using Langchain."
+  },
+  {
+    "start": 153.0,
+    "end": 156.0,
+    "text": " And you will notice that in the process of making these agents,"
+  },
+  {
+    "start": 156.0,
+    "end": 161.0,
+    "text": " you will use LLMs, tools, and tool calling concepts."
+  },
+  {
+    "start": 161.0,
+    "end": 164.0,
+    "text": " So basically, whatever you have studied so far, everything will be connected."
+  },
+  {
+    "start": 164.0,
+    "end": 167.0,
+    "text": " And we are going to cover everything in agent."
+  },
+  {
+    "start": 167.0,
+    "end": 170.0,
+    "text": " So in the topic of agent, I may need one or two videos."
+  },
+  {
+    "start": 170.0,
+    "end": 176.0,
+    "text": " But the idea is that I want to explain in detail how agents are made using Langchain."
+  },
+  {
+    "start": 176.0,
+    "end": 181.0,
+    "text": " So now that you have this high-level overview of what we are going to do in the next 2-4 videos,"
+  },
+  {
+    "start": 181.0,
+    "end": 183.0,
+    "text": " now let's start today's video."
+  },
+  {
+    "start": 183.0,
+    "end": 185.0,
+    "text": " Let's focus on tools."
+  },
+  {
+    "start": 185.0,
+    "end": 188.0,
+    "text": " So let's talk about tools."
+  },
+  {
+    "start": 188.0,
+    "end": 194.0,
+    "text": " But to understand tools, we will first have to talk about LLMs."
+  },
+  {
+    "start": 194.0,
+    "end": 199.0,
+    "text": " So LLMs, as you know, are very powerful natural language processing systems."
+  },
+  {
+    "start": 200.0,
+    "end": 205.0,
+    "text": " If I ask you what is the biggest quality of LLMs,"
+  },
+  {
+    "start": 205.0,
+    "end": 207.0,
+    "text": " what is the biggest power of LLMs,"
+  },
+  {
+    "start": 207.0,
+    "end": 209.0,
+    "text": " then you will probably say two things."
+  },
+  {
+    "start": 209.0,
+    "end": 215.0,
+    "text": " First, you will say that LLMs have reasoning capability."
+  },
+  {
+    "start": 215.0,
+    "end": 220.0,
+    "text": " Which means that if you provide a question to LLMs,"
+  },
+  {
+    "start": 220.0,
+    "end": 228.0,
+    "text": " then LLM understands that question and breaks down how to answer that question."
+  },
+  {
+    "start": 228.0,
+    "end": 233.0,
+    "text": " So basically, the LLM can think."
+  },
+  {
+    "start": 233.0,
+    "end": 237.0,
+    "text": " This is the first core capability of an LLM."
+  },
+  {
+    "start": 237.0,
+    "end": 240.0,
+    "text": " The second one is language generation."
+  },
+  {
+    "start": 240.0,
+    "end": 246.0,
+    "text": " Once an LLM understands how to answer a given question,"
+  },
+  {
+    "start": 246.0,
+    "end": 251.0,
+    "text": " then after that, LLM generates an answer for you word by word."
+  },
+  {
+    "start": 251.0,
+    "end": 257.0,
+    "text": " Which means, in a way, we can say that LLMs have the ability to speak."
+  },
+  {
+    "start": 257.0,
+    "end": 262.0,
+    "text": " So in a nutshell, today's LLMs have two core capabilities."
+  },
+  {
+    "start": 262.0,
+    "end": 264.0,
+    "text": " First, to think."
+  },
+  {
+    "start": 264.0,
+    "end": 266.0,
+    "text": " Second, to speak."
+  },
+  {
+    "start": 266.0,
+    "end": 268.0,
+    "text": " But that's it."
+  },
+  {
+    "start": 268.0,
+    "end": 272.0,
+    "text": " Apart from this, LLMs have no other power."
+  },
+  {
+    "start": 272.0,
+    "end": 276.0,
+    "text": " For example, if I ask an LLM,"
+  },
+  {
+    "start": 276.0,
+    "end": 283.0,
+    "text": " tell me, what is the best way to go to Bombay from Delhi?"
+  },
+  {
+    "start": 283.0,
+    "end": 286.0,
+    "text": " Then he will think and tell you the answer."
+  },
+  {
+    "start": 286.0,
+    "end": 290.0,
+    "text": " He will say, flight is one option, train is one option, bus is another option."
+  },
+  {
+    "start": 290.0,
+    "end": 294.0,
+    "text": " But if I ask him to book me on a train,"
+  },
+  {
+    "start": 294.0,
+    "end": 297.0,
+    "text": " then can LLM book you on a train?"
+  },
+  {
+    "start": 297.0,
+    "end": 299.0,
+    "text": " The answer is no."
+  },
+  {
+    "start": 299.0,
+    "end": 305.0,
+    "text": " LLMs don't have the power to perform any tasks for you."
+  },
+  {
+    "start": 305.0,
+    "end": 310.0,
+    "text": " So in a way, you can say that LLM is like a body, a human body,"
+  },
+  {
+    "start": 310.0,
+    "end": 313.0,
+    "text": " which has the capability to think and speak,"
+  },
+  {
+    "start": 313.0,
+    "end": 315.0,
+    "text": " but in that human body,"
+  },
+  {
+    "start": 315.0,
+    "end": 317.0,
+    "text": " it doesn't have hands and legs."
+  },
+  {
+    "start": 317.0,
+    "end": 321.0,
+    "text": " Which means that it can't execute any tasks by itself."
+  },
+  {
+    "start": 321.0,
+    "end": 325.0,
+    "text": " So there are a lot of tasks that today's computer systems can do,"
+  },
+  {
+    "start": 325.0,
+    "end": 327.0,
+    "text": " but LLMs can't do."
+  },
+  {
+    "start": 327.0,
+    "end": 331.0,
+    "text": " For example, fetching live weather data."
+  },
+  {
+    "start": 331.0,
+    "end": 332.0,
+    "text": " LLMs can't do that."
+  },
+  {
+    "start": 332.0,
+    "end": 334.0,
+    "text": " Maths, doing it reliably."
+  },
+  {
+    "start": 334.0,
+    "end": 337.0,
+    "text": " Now, basic addition and subtraction, LLM will perform it,"
+  },
+  {
+    "start": 337.0,
+    "end": 339.0,
+    "text": " but if you give it a complex math problem,"
+  },
+  {
+    "start": 339.0,
+    "end": 343.0,
+    "text": " there is a good chance that the answer that comes out is not reliable."
+  },
+  {
+    "start": 343.0,
+    "end": 344.0,
+    "text": " Because,"
+  },
+  {
+    "start": 344.0,
+    "end": 347.0,
+    "text": " LLMs have not learned how to solve math,"
+  },
+  {
+    "start": 347.0,
+    "end": 349.0,
+    "text": " they have learned language generation."
+  },
+  {
+    "start": 349.0,
+    "end": 351.0,
+    "text": " LLMs can't call external APIs."
+  },
+  {
+    "start": 351.0,
+    "end": 355.0,
+    "text": " If you ask them to tweet on Twitter on my behalf,"
+  },
+  {
+    "start": 355.0,
+    "end": 357.0,
+    "text": " then LLMs can't do it."
+  },
+  {
+    "start": 357.0,
+    "end": 359.0,
+    "text": " They can't run code."
+  },
+  {
+    "start": 359.0,
+    "end": 362.0,
+    "text": " And they can't interact with databases."
+  },
+  {
+    "start": 362.0,
+    "end": 364.0,
+    "text": " So in the real world,"
+  },
+  {
+    "start": 364.0,
+    "end": 367.0,
+    "text": " computer systems that can perform a lot of tasks,"
+  },
+  {
+    "start": 367.0,
+    "end": 370.0,
+    "text": " LLMs don't have that capability."
+  },
+  {
+    "start": 370.0,
+    "end": 372.0,
+    "text": " So as I said,"
+  },
+  {
+    "start": 372.0,
+    "end": 375.0,
+    "text": " you can see LLMs as a human body,"
+  },
+  {
+    "start": 375.0,
+    "end": 377.0,
+    "text": " which has a brain,"
+  },
+  {
+    "start": 377.0,
+    "end": 379.0,
+    "text": " which can think,"
+  },
+  {
+    "start": 379.0,
+    "end": 381.0,
+    "text": " and can speak."
+  },
+  {
+    "start": 381.0,
+    "end": 383.0,
+    "text": " But it can't do those things."
+  },
+  {
+    "start": 383.0,
+    "end": 386.0,
+    "text": " It doesn't have hands and legs."
+  },
+  {
+    "start": 386.0,
+    "end": 388.0,
+    "text": " So what are tools?"
+  },
+  {
+    "start": 388.0,
+    "end": 390.0,
+    "text": " Tools are a mechanism,"
+  },
+  {
+    "start": 390.0,
+    "end": 395.0,
+    "text": " with the help of which you can give your LLMs hands and legs."
+  },
+  {
+    "start": 395.0,
+    "end": 396.0,
+    "text": " Meaning,"
+  },
+  {
+    "start": 396.0,
+    "end": 401.0,
+    "text": " you can create a tool to perform any given task,"
+  },
+  {
+    "start": 401.0,
+    "end": 404.0,
+    "text": " and you can connect that tool to your LLMs."
+  },
+  {
+    "start": 404.0,
+    "end": 407.0,
+    "text": " As soon as you perform this connection,"
+  },
+  {
+    "start": 407.0,
+    "end": 410.0,
+    "text": " as soon as that task is given to your LLMs,"
+  },
+  {
+    "start": 410.0,
+    "end": 414.0,
+    "text": " then LLMs will execute that task with the help of that tool."
+  },
+  {
+    "start": 414.0,
+    "end": 415.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 415.0,
+    "end": 417.0,
+    "text": " Technically speaking,"
+  },
+  {
+    "start": 417.0,
+    "end": 420.0,
+    "text": " tools are nothing but functions."
+  },
+  {
+    "start": 420.0,
+    "end": 424.0,
+    "text": " In which you have written the logic of executing a task."
+  },
+  {
+    "start": 424.0,
+    "end": 426.0,
+    "text": " Now what you do is,"
+  },
+  {
+    "start": 426.0,
+    "end": 430.0,
+    "text": " you package this function in such a way,"
+  },
+  {
+    "start": 430.0,
+    "end": 435.0,
+    "text": " that this function can interact with LLMs."
+  },
+  {
+    "start": 435.0,
+    "end": 436.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 436.0,
+    "end": 437.0,
+    "text": " So for example,"
+  },
+  {
+    "start": 437.0,
+    "end": 439.0,
+    "text": " you made a function,"
+  },
+  {
+    "start": 439.0,
+    "end": 446.0,
+    "text": " which can perform a booking on the website of IRCTC,"
+  },
+  {
+    "start": 446.0,
+    "end": 447.0,
+    "text": " a train booking."
+  },
+  {
+    "start": 447.0,
+    "end": 448.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 448.0,
+    "end": 450.0,
+    "text": " And what did you do?"
+  },
+  {
+    "start": 450.0,
+    "end": 452.0,
+    "text": " You packaged this function in such a way,"
+  },
+  {
+    "start": 452.0,
+    "end": 455.0,
+    "text": " that LLMs can talk to this function."
+  },
+  {
+    "start": 455.0,
+    "end": 456.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 456.0,
+    "end": 459.0,
+    "text": " So as soon as I ask this LLM,"
+  },
+  {
+    "start": 459.0,
+    "end": 462.0,
+    "text": " to tell me trains from Delhi to Mumbai,"
+  },
+  {
+    "start": 462.0,
+    "end": 464.0,
+    "text": " then this LLM will tell me."
+  },
+  {
+    "start": 464.0,
+    "end": 468.0,
+    "text": " Now as soon as I ask him to book me on this train,"
+  },
+  {
+    "start": 468.0,
+    "end": 472.0,
+    "text": " since this LLM now has the access to this function,"
+  },
+  {
+    "start": 472.0,
+    "end": 477.0,
+    "text": " then this LLM will also book you on this ticket with the help of this function."
+  },
+  {
+    "start": 477.0,
+    "end": 480.0,
+    "text": " And that is the power of tools."
+  },
+  {
+    "start": 480.0,
+    "end": 483.0,
+    "text": " That the more tools you add in LLMs,"
+  },
+  {
+    "start": 483.0,
+    "end": 487.0,
+    "text": " the more tasks your LLM can perform."
+  },
+  {
+    "start": 487.0,
+    "end": 488.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 488.0,
+    "end": 489.0,
+    "text": " So see,"
+  },
+  {
+    "start": 489.0,
+    "end": 491.0,
+    "text": " a very simple definition is written here."
+  },
+  {
+    "start": 491.0,
+    "end": 493.0,
+    "text": " A tool is just a Python function,"
+  },
+  {
+    "start": 493.0,
+    "end": 495.0,
+    "text": " that is packaged in a way,"
+  },
+  {
+    "start": 495.0,
+    "end": 499.0,
+    "text": " the LLM can understand and call when needed."
+  },
+  {
+    "start": 499.0,
+    "end": 501.0,
+    "text": " So LLM will think by itself,"
+  },
+  {
+    "start": 501.0,
+    "end": 504.0,
+    "text": " that when and what tool do I need?"
+  },
+  {
+    "start": 504.0,
+    "end": 505.0,
+    "text": " And then,"
+  },
+  {
+    "start": 505.0,
+    "end": 506.0,
+    "text": " according to him,"
+  },
+  {
+    "start": 506.0,
+    "end": 507.0,
+    "text": " he will call that tool,"
+  },
+  {
+    "start": 507.0,
+    "end": 509.0,
+    "text": " and provide it inputs."
+  },
+  {
+    "start": 509.0,
+    "end": 511.0,
+    "text": " That tool will execute its work,"
+  },
+  {
+    "start": 511.0,
+    "end": 513.0,
+    "text": " and tell LLM back."
+  },
+  {
+    "start": 513.0,
+    "end": 514.0,
+    "text": " LLM will tell you,"
+  },
+  {
+    "start": 514.0,
+    "end": 515.0,
+    "text": " the work is done."
+  },
+  {
+    "start": 515.0,
+    "end": 516.0,
+    "text": " And this is the flow."
+  },
+  {
+    "start": 516.0,
+    "end": 517.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 517.0,
+    "end": 519.0,
+    "text": " So I hope you have understood roughly,"
+  },
+  {
+    "start": 519.0,
+    "end": 521.0,
+    "text": " what is the concept of tools."
+  },
+  {
+    "start": 521.0,
+    "end": 525.0,
+    "text": " Tools is a way to provide LLM hands and legs,"
+  },
+  {
+    "start": 525.0,
+    "end": 528.0,
+    "text": " so that it can execute any kind of tasks."
+  },
+  {
+    "start": 528.0,
+    "end": 529.0,
+    "text": " Now,"
+  },
+  {
+    "start": 529.0,
+    "end": 532.0,
+    "text": " if we discuss a little more about tools,"
+  },
+  {
+    "start": 532.0,
+    "end": 535.0,
+    "text": " then you get two types of tools in the langchain."
+  },
+  {
+    "start": 535.0,
+    "end": 537.0,
+    "text": " One is built-in tools,"
+  },
+  {
+    "start": 537.0,
+    "end": 539.0,
+    "text": " and the second is custom tools."
+  },
+  {
+    "start": 539.0,
+    "end": 540.0,
+    "text": " So,"
+  },
+  {
+    "start": 540.0,
+    "end": 544.0,
+    "text": " the team of the langchain has identified that there are many such tasks,"
+  },
+  {
+    "start": 544.0,
+    "end": 546.0,
+    "text": " which everyone needs."
+  },
+  {
+    "start": 546.0,
+    "end": 547.0,
+    "text": " For example,"
+  },
+  {
+    "start": 547.0,
+    "end": 549.0,
+    "text": " Google search,"
+  },
+  {
+    "start": 549.0,
+    "end": 551.0,
+    "text": " or searching on the internet,"
+  },
+  {
+    "start": 551.0,
+    "end": 553.0,
+    "text": " or searching on Wikipedia,"
+  },
+  {
+    "start": 553.0,
+    "end": 555.0,
+    "text": " or running command line tools."
+  },
+  {
+    "start": 555.0,
+    "end": 557.0,
+    "text": " So what they did is,"
+  },
+  {
+    "start": 557.0,
+    "end": 562.0,
+    "text": " they have already made built-in tools for these popular use cases in the langchain."
+  },
+  {
+    "start": 562.0,
+    "end": 565.0,
+    "text": " Anyone can go and use these tools."
+  },
+  {
+    "start": 565.0,
+    "end": 567.0,
+    "text": " And you don't need to write any code yourself."
+  },
+  {
+    "start": 567.0,
+    "end": 568.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 568.0,
+    "end": 570.0,
+    "text": " And the second is custom tools."
+  },
+  {
+    "start": 570.0,
+    "end": 575.0,
+    "text": " It may be that you have a LLM plus tools system for your company,"
+  },
+  {
+    "start": 575.0,
+    "end": 577.0,
+    "text": " and you are making a tool system,"
+  },
+  {
+    "start": 577.0,
+    "end": 581.0,
+    "text": " and you get a use case that is only specific to your company."
+  },
+  {
+    "start": 581.0,
+    "end": 583.0,
+    "text": " So what you can do there is,"
+  },
+  {
+    "start": 583.0,
+    "end": 586.0,
+    "text": " you can make custom tools for yourself."
+  },
+  {
+    "start": 586.0,
+    "end": 587.0,
+    "text": " So going forward,"
+  },
+  {
+    "start": 587.0,
+    "end": 590.0,
+    "text": " I will teach you to work with both types of tools."
+  },
+  {
+    "start": 590.0,
+    "end": 593.0,
+    "text": " I will also show you the built-in tools in the langchain,"
+  },
+  {
+    "start": 593.0,
+    "end": 596.0,
+    "text": " and I will also show you how you can make your own tools,"
+  },
+  {
+    "start": 596.0,
+    "end": 598.0,
+    "text": " and how you can connect them with LLM."
+  },
+  {
+    "start": 598.0,
+    "end": 599.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 599.0,
+    "end": 600.0,
+    "text": " Now,"
+  },
+  {
+    "start": 600.0,
+    "end": 601.0,
+    "text": " one big question,"
+  },
+  {
+    "start": 601.0,
+    "end": 603.0,
+    "text": " that the concept of tools,"
+  },
+  {
+    "start": 603.0,
+    "end": 604.0,
+    "text": " this agent,"
+  },
+  {
+    "start": 604.0,
+    "end": 607.0,
+    "text": " how is it related to the concept of agents?"
+  },
+  {
+    "start": 607.0,
+    "end": 608.0,
+    "text": " Because after all,"
+  },
+  {
+    "start": 608.0,
+    "end": 610.0,
+    "text": " we want to learn how to make agents."
+  },
+  {
+    "start": 610.0,
+    "end": 611.0,
+    "text": " So,"
+  },
+  {
+    "start": 611.0,
+    "end": 614.0,
+    "text": " let's read the definition of agent here."
+  },
+  {
+    "start": 614.0,
+    "end": 616.0,
+    "text": " See what is written here."
+  },
+  {
+    "start": 616.0,
+    "end": 620.0,
+    "text": " An AI agent is an LLM powered system"
+  },
+  {
+    "start": 620.0,
+    "end": 622.0,
+    "text": " that can autonomously think,"
+  },
+  {
+    "start": 622.0,
+    "end": 623.0,
+    "text": " decide,"
+  },
+  {
+    "start": 623.0,
+    "end": 629.0,
+    "text": " and take actions using external tools or APIs to achieve a goal."
+  },
+  {
+    "start": 629.0,
+    "end": 630.0,
+    "text": " Okay?"
+  },
+  {
+    "start": 630.0,
+    "end": 631.0,
+    "text": " So,"
+  },
+  {
+    "start": 631.0,
+    "end": 634.0,
+    "text": " agent is a system that has two capabilities."
+  },
+  {
+    "start": 634.0,
+    "end": 635.0,
+    "text": " First,"
+  },
+  {
+    "start": 635.0,
+    "end": 636.0,
+    "text": " it can think,"
+  },
+  {
+    "start": 636.0,
+    "end": 637.0,
+    "text": " reason,"
+  },
+  {
+    "start": 637.0,
+    "end": 638.0,
+    "text": " and second,"
+  },
+  {
+    "start": 638.0,
+    "end": 639.0,
+    "text": " it can take action."
+  },
+  {
+    "start": 639.0,
+    "end": 640.0,
+    "text": " Meaning,"
+  },
+  {
+    "start": 640.0,
+    "end": 644.0,
+    "text": " it can perform a task about what it has thought."
+  },
+  {
+    "start": 644.0,
+    "end": 645.0,
+    "text": " Right?"
+  },
+  {
+    "start": 645.0,
+    "end": 646.0,
+    "text": " So,"
+  },
+  {
+    "start": 646.0,
+    "end": 647.0,
+    "text": " in a nutshell,"
+  },
+  {
+    "start": 647.0,
+    "end": 650.0,
+    "text": " agents have two capabilities."
+  },
+  {
+    "start": 650.0,
+    "end": 652.0,
+    "text": " One is reasoning and decision making."
+  },
+  {
+    "start": 652.0,
+    "end": 653.0,
+    "text": " Given a problem,"
+  },
+  {
+    "start": 653.0,
+    "end": 654.0,
+    "text": " they can think step by step,"
+  },
+  {
+    "start": 654.0,
+    "end": 656.0,
+    "text": " how to solve that problem."
+  },
+  {
+    "start": 656.0,
+    "end": 658.0,
+    "text": " And once they think,"
+  },
+  {
+    "start": 658.0,
+    "end": 660.0,
+    "text": " they can actually perform action."
+  },
+  {
+    "start": 660.0,
+    "end": 661.0,
+    "text": " Now,"
+  },
+  {
+    "start": 661.0,
+    "end": 664.0,
+    "text": " this reasoning and decision making part of the agent,"
+  },
+  {
+    "start": 664.0,
+    "end": 666.0,
+    "text": " this comes from LLM."
+  },
+  {
+    "start": 666.0,
+    "end": 667.0,
+    "text": " Right?"
+  },
+  {
+    "start": 667.0,
+    "end": 668.0,
+    "text": " But,"
+  },
+  {
+    "start": 668.0,
+    "end": 669.0,
+    "text": " this action taking part,"
+  },
+  {
+    "start": 669.0,
+    "end": 671.0,
+    "text": " that I have to do this now,"
+  },
+  {
+    "start": 671.0,
+    "end": 674.0,
+    "text": " this you power using tools."
+  },
+  {
+    "start": 674.0,
+    "end": 675.0,
+    "text": " So,"
+  },
+  {
+    "start": 675.0,
+    "end": 676.0,
+    "text": " in a nutshell,"
+  },
+  {
+    "start": 676.0,
+    "end": 678.0,
+    "text": " the marriage between LLMs and tools,"
+  },
+  {
+    "start": 678.0,
+    "end": 680.0,
+    "text": " we call that agent."
+  },
+  {
+    "start": 680.0,
+    "end": 681.0,
+    "text": " And that is why,"
+  },
+  {
+    "start": 681.0,
+    "end": 683.0,
+    "text": " to build agents,"
+  },
+  {
+    "start": 683.0,
+    "end": 685.0,
+    "text": " the more important the concept of LLM is,"
+  },
+  {
+    "start": 685.0,
+    "end": 688.0,
+    "text": " the more important the concept of tools is."
+  },
+  {
+    "start": 688.0,
+    "end": 689.0,
+    "text": " And that is why,"
+  },
+  {
+    "start": 689.0,
+    "end": 691.0,
+    "text": " I had told you in the beginning of the video,"
+  },
+  {
+    "start": 691.0,
+    "end": 693.0,
+    "text": " that if you have a Lang chain or a Lang graph,"
+  },
+  {
+    "start": 693.0,
+    "end": 696.0,
+    "text": " and you want to make agents with the help of Lang graph,"
+  },
+  {
+    "start": 696.0,
+    "end": 697.0,
+    "text": " then tools is a concept,"
+  },
+  {
+    "start": 697.0,
+    "end": 699.0,
+    "text": " which you should know well."
+  },
+  {
+    "start": 699.0,
+    "end": 700.0,
+    "text": " Right?"
+  },
+  {
+    "start": 700.0,
+    "end": 701.0,
+    "text": " So, I really hope,"
+  },
+  {
+    "start": 701.0,
+    "end": 703.0,
+    "text": " the discussion we had in the last 5 minutes,"
+  },
+  {
+    "start": 703.0,
+    "end": 704.0,
+    "text": " around tools,"
+  },
+  {
+    "start": 704.0,
+    "end": 705.0,
+    "text": " you understood that."
+  },
+  {
+    "start": 705.0,
+    "end": 706.0,
+    "text": " And now,"
+  },
+  {
+    "start": 706.0,
+    "end": 709.0,
+    "text": " we will try to understand at the level of how,"
+  },
+  {
+    "start": 709.0,
+    "end": 711.0,
+    "text": " how tools are made,"
+  },
+  {
+    "start": 711.0,
+    "end": 713.0,
+    "text": " and how they are used."
+  },
+  {
+    "start": 713.0,
+    "end": 714.0,
+    "text": " So,"
+  },
+  {
+    "start": 714.0,
+    "end": 715.0,
+    "text": " first I will teach you,"
+  },
+  {
+    "start": 715.0,
+    "end": 718.0,
+    "text": " how to work with built-in tools."
+  },
+  {
+    "start": 718.0,
+    "end": 719.0,
+    "text": " By the way,"
+  },
+  {
+    "start": 719.0,
+    "end": 720.0,
+    "text": " we just discussed,"
+  },
+  {
+    "start": 720.0,
+    "end": 721.0,
+    "text": " what are built-in tools."
+  },
+  {
+    "start": 721.0,
+    "end": 723.0,
+    "text": " A built-in tool is a tool,"
+  },
+  {
+    "start": 723.0,
+    "end": 725.0,
+    "text": " that Lang chain already provides for you."
+  },
+  {
+    "start": 725.0,
+    "end": 726.0,
+    "text": " It is pre-built,"
+  },
+  {
+    "start": 726.0,
+    "end": 727.0,
+    "text": " production ready,"
+  },
+  {
+    "start": 727.0,
+    "end": 729.0,
+    "text": " and requires minimal or no setup."
+  },
+  {
+    "start": 729.0,
+    "end": 730.0,
+    "text": " Right?"
+  },
+  {
+    "start": 730.0,
+    "end": 733.0,
+    "text": " So, you don't have to write the function logic yourself,"
+  },
+  {
+    "start": 733.0,
+    "end": 735.0,
+    "text": " you just have to import and use it."
+  },
+  {
+    "start": 735.0,
+    "end": 736.0,
+    "text": " The basic idea is,"
+  },
+  {
+    "start": 736.0,
+    "end": 738.0,
+    "text": " that there were some popular use cases,"
+  },
+  {
+    "start": 738.0,
+    "end": 740.0,
+    "text": " which the team of Lang chain thought,"
+  },
+  {
+    "start": 740.0,
+    "end": 741.0,
+    "text": " that everyone will need it."
+  },
+  {
+    "start": 741.0,
+    "end": 743.0,
+    "text": " So, they have already made those tools,"
+  },
+  {
+    "start": 743.0,
+    "end": 745.0,
+    "text": " and put them in the library of Lang chain."
+  },
+  {
+    "start": 745.0,
+    "end": 747.0,
+    "text": " Now, if you want to use those tools,"
+  },
+  {
+    "start": 747.0,
+    "end": 750.0,
+    "text": " then you don't need to write your own code."
+  },
+  {
+    "start": 750.0,
+    "end": 751.0,
+    "text": " Simply import them,"
+  },
+  {
+    "start": 751.0,
+    "end": 752.0,
+    "text": " use them."
+  },
+  {
+    "start": 752.0,
+    "end": 753.0,
+    "text": " Right?"
+  },
+  {
+    "start": 753.0,
+    "end": 756.0,
+    "text": " Here, I have written the names of some popular built-in tools,"
+  },
+  {
+    "start": 756.0,
+    "end": 758.0,
+    "text": " and have given their one line description."
+  },
+  {
+    "start": 758.0,
+    "end": 759.0,
+    "text": " For example,"
+  },
+  {
+    "start": 759.0,
+    "end": 760.0,
+    "text": " there is one tool,"
+  },
+  {
+    "start": 760.0,
+    "end": 761.0,
+    "text": " DuckDuckGo Search."
+  },
+  {
+    "start": 761.0,
+    "end": 762.0,
+    "text": " Right?"
+  },
+  {
+    "start": 762.0,
+    "end": 763.0,
+    "text": " With the help of this,"
+  },
+  {
+    "start": 763.0,
+    "end": 764.0,
+    "text": " you can search the web."
+  },
+  {
+    "start": 764.0,
+    "end": 767.0,
+    "text": " DuckDuckGo is a very famous search engine,"
+  },
+  {
+    "start": 767.0,
+    "end": 768.0,
+    "text": " like Google."
+  },
+  {
+    "start": 768.0,
+    "end": 770.0,
+    "text": " So, to search DuckDuckGo,"
+  },
+  {
+    "start": 770.0,
+    "end": 773.0,
+    "text": " a tool is already made in Lang chain."
+  },
+  {
+    "start": 773.0,
+    "end": 774.0,
+    "text": " Second is,"
+  },
+  {
+    "start": 774.0,
+    "end": 775.0,
+    "text": " Wikipedia Query Run."
+  },
+  {
+    "start": 775.0,
+    "end": 776.0,
+    "text": " On any topic,"
+  },
+  {
+    "start": 776.0,
+    "end": 779.0,
+    "text": " you can go and search on Wikipedia,"
+  },
+  {
+    "start": 779.0,
+    "end": 782.0,
+    "text": " and you can get a summarized version of it,"
+  },
+  {
+    "start": 782.0,
+    "end": 784.0,
+    "text": " and you can also search on Google."
+  },
+  {
+    "start": 784.0,
+    "end": 785.0,
+    "text": " And then,"
+  },
+  {
+    "start": 785.0,
+    "end": 786.0,
+    "text": " you can also search on Google."
+  },
+  {
+    "start": 786.0,
+    "end": 788.0,
+    "text": " So, this is the first step of this tool."
+  },
+  {
+    "start": 788.0,
+    "end": 790.0,
+    "text": " Next is the Python REPL tool."
+  },
+  {
+    "start": 790.0,
+    "end": 791.0,
+    "text": " With the help of this,"
+  },
+  {
+    "start": 791.0,
+    "end": 793.0,
+    "text": " you can run raw Python code."
+  },
+  {
+    "start": 793.0,
+    "end": 794.0,
+    "text": " Right?"
+  },
+  {
+    "start": 794.0,
+    "end": 795.0,
+    "text": " Suppose,"
+  },
+  {
+    "start": 795.0,
+    "end": 797.0,
+    "text": " you want a factorial number."
+  },
+  {
+    "start": 797.0,
+    "end": 798.0,
+    "text": " So,"
+  },
+  {
+    "start": 798.0,
+    "end": 799.0,
+    "text": " if you directly ask LLM,"
+  },
+  {
+    "start": 799.0,
+    "end": 800.0,
+    "text": " it is not necessary"
+  },
+  {
+    "start": 800.0,
+    "end": 801.0,
+    "text": " that the answer you will get,"
+  },
+  {
+    "start": 801.0,
+    "end": 802.0,
+    "text": " will be correct."
+  },
+  {
+    "start": 802.0,
+    "end": 803.0,
+    "text": " So, instead,"
+  },
+  {
+    "start": 803.0,
+    "end": 804.0,
+    "text": " what you can do is,"
+  },
+  {
+    "start": 804.0,
+    "end": 805.0,
+    "text": " you can use this tool."
+  },
+  {
+    "start": 805.0,
+    "end": 807.0,
+    "text": " This tool will write a code from behind the scenes,"
+  },
+  {
+    "start": 807.0,
+    "end": 808.0,
+    "text": " of factorial,"
+  },
+  {
+    "start": 808.0,
+    "end": 809.0,
+    "text": " and will give you the answer."
+  },
+  {
+    "start": 809.0,
+    "end": 810.0,
+    "text": " Right?"
+  },
+  {
+    "start": 810.0,
+    "end": 811.0,
+    "text": " Next is Shell tool."
+  },
+  {
+    "start": 811.0,
+    "end": 813.0,
+    "text": " You can run Shell commands,"
+  },
+  {
+    "start": 813.0,
+    "end": 815.0,
+    "text": " or you can run commands in the console."
+  },
+  {
+    "start": 815.0,
+    "end": 817.0,
+    "text": " So, if you are making an application,"
+  },
+  {
+    "start": 817.0,
+    "end": 818.0,
+    "text": " where you,"
+  },
+  {
+    "start": 818.0,
+    "end": 819.0,
+    "text": " you know,"
+  },
+  {
+    "start": 819.0,
+    "end": 822.0,
+    "text": " you want to interact with the files of the system,"
+  },
+  {
+    "start": 822.0,
+    "end": 825.0,
+    "text": " on which the program is running,"
+  },
+  {
+    "start": 825.0,
+    "end": 827.0,
+    "text": " then you can use this tool there."
+  },
+  {
+    "start": 827.0,
+    "end": 828.0,
+    "text": " Apart from that,"
+  },
+  {
+    "start": 828.0,
+    "end": 830.0,
+    "text": " there is a request get tool,"
+  },
+  {
+    "start": 830.0,
+    "end": 831.0,
+    "text": " with the help of which,"
+  },
+  {
+    "start": 831.0,
+    "end": 832.0,
+    "text": " you can make HTTP request."
+  },
+  {
+    "start": 832.0,
+    "end": 834.0,
+    "text": " Gmail send message tool,"
+  },
+  {
+    "start": 834.0,
+    "end": 835.0,
+    "text": " with the help of which,"
+  },
+  {
+    "start": 835.0,
+    "end": 838.0,
+    "text": " you can email using Gmail."
+  },
+  {
+    "start": 838.0,
+    "end": 840.0,
+    "text": " There is a different tool for Slack."
+  },
+  {
+    "start": 840.0,
+    "end": 842.0,
+    "text": " There is a SQL database query tool,"
+  },
+  {
+    "start": 842.0,
+    "end": 843.0,
+    "text": " with the help of which,"
+  },
+  {
+    "start": 843.0,
+    "end": 844.0,
+    "text": " you can run SQL queries."
+  },
+  {
+    "start": 844.0,
+    "end": 845.0,
+    "text": " So, you can see,"
+  },
+  {
+    "start": 845.0,
+    "end": 846.0,
+    "text": " the popular use cases,"
+  },
+  {
+    "start": 846.0,
+    "end": 847.0,
+    "text": " tools for them,"
+  },
+  {
+    "start": 847.0,
+    "end": 848.0,
+    "text": " have already been made"
+  },
+  {
+    "start": 848.0,
+    "end": 849.0,
+    "text": " and kept in the langchain."
+  },
+  {
+    "start": 849.0,
+    "end": 850.0,
+    "text": " So, what I will do is,"
+  },
+  {
+    "start": 850.0,
+    "end": 854.0,
+    "text": " I will show you how to work with one or two tools."
+  },
+  {
+    "start": 854.0,
+    "end": 855.0,
+    "text": " It is very simple."
+  },
+  {
+    "start": 855.0,
+    "end": 857.0,
+    "text": " But, what will happen if you see once,"
+  },
+  {
+    "start": 857.0,
+    "end": 859.0,
+    "text": " that a little understanding will develop."
+  },
+  {
+    "start": 859.0,
+    "end": 861.0,
+    "text": " So, what I will do is,"
+  },
+  {
+    "start": 861.0,
+    "end": 863.0,
+    "text": " I will take you to Google Colab,"
+  },
+  {
+    "start": 863.0,
+    "end": 866.0,
+    "text": " where I have already written this code."
+  },
+  {
+    "start": 866.0,
+    "end": 868.0,
+    "text": " You just have to import some things,"
+  },
+  {
+    "start": 868.0,
+    "end": 869.0,
+    "text": " and,"
+  },
+  {
+    "start": 870.0,
+    "end": 872.0,
+    "text": " here is our first tool,"
+  },
+  {
+    "start": 872.0,
+    "end": 874.0,
+    "text": " which we are going to see."
+  },
+  {
+    "start": 874.0,
+    "end": 878.0,
+    "text": " We will use DuckDuckGo Search."
+  },
+  {
+    "start": 878.0,
+    "end": 879.0,
+    "text": " So, it may happen that,"
+  },
+  {
+    "start": 879.0,
+    "end": 882.0,
+    "text": " you are making such an agent application,"
+  },
+  {
+    "start": 882.0,
+    "end": 885.0,
+    "text": " where you need to search the web,"
+  },
+  {
+    "start": 885.0,
+    "end": 888.0,
+    "text": " in real time."
+  },
+  {
+    "start": 888.0,
+    "end": 889.0,
+    "text": " Right?"
+  },
+  {
+    "start": 889.0,
+    "end": 890.0,
+    "text": " Suppose, your user comes,"
+  },
+  {
+    "start": 890.0,
+    "end": 891.0,
+    "text": " he asks you,"
+  },
+  {
+    "start": 891.0,
+    "end": 892.0,
+    "text": " tell me,"
+  },
+  {
+    "start": 892.0,
+    "end": 896.0,
+    "text": " what is the most important news of today?"
+  },
+  {
+    "start": 896.0,
+    "end": 897.0,
+    "text": " Right?"
+  },
+  {
+    "start": 897.0,
+    "end": 898.0,
+    "text": " So,"
+  },
+  {
+    "start": 898.0,
+    "end": 900.0,
+    "text": " LLM will not have this knowledge."
+  },
+  {
+    "start": 900.0,
+    "end": 902.0,
+    "text": " Because, LLM has a knowledge cut-off date."
+  },
+  {
+    "start": 902.0,
+    "end": 904.0,
+    "text": " So, with the help of this particular tool,"
+  },
+  {
+    "start": 904.0,
+    "end": 905.0,
+    "text": " what you can do is,"
+  },
+  {
+    "start": 905.0,
+    "end": 907.0,
+    "text": " you will quickly search DuckDuckGo,"
+  },
+  {
+    "start": 907.0,
+    "end": 908.0,
+    "text": " and from there,"
+  },
+  {
+    "start": 908.0,
+    "end": 910.0,
+    "text": " you will bring the search results and give it to LLM."
+  },
+  {
+    "start": 910.0,
+    "end": 914.0,
+    "text": " And then, LLM will prepare an answer according to that result,"
+  },
+  {
+    "start": 914.0,
+    "end": 915.0,
+    "text": " and will give it to the user."
+  },
+  {
+    "start": 915.0,
+    "end": 917.0,
+    "text": " So, first of all, what you have to do is,"
+  },
+  {
+    "start": 917.0,
+    "end": 921.0,
+    "text": " you have to import this tool from the langchain community.tools."
+  },
+  {
+    "start": 921.0,
+    "end": 923.0,
+    "text": " DuckDuckGo Search Run."
+  },
+  {
+    "start": 923.0,
+    "end": 924.0,
+    "text": " After that,"
+  },
+  {
+    "start": 924.0,
+    "end": 926.0,
+    "text": " you will make an object of this class,"
+  },
+  {
+    "start": 926.0,
+    "end": 928.0,
+    "text": " which we will call Search Tool."
+  },
+  {
+    "start": 928.0,
+    "end": 929.0,
+    "text": " Now, what is the fun part?"
+  },
+  {
+    "start": 929.0,
+    "end": 931.0,
+    "text": " I haven't told you this yet."
+  },
+  {
+    "start": 931.0,
+    "end": 934.0,
+    "text": " These tools are also runnable."
+  },
+  {
+    "start": 934.0,
+    "end": 935.0,
+    "text": " Which means,"
+  },
+  {
+    "start": 935.0,
+    "end": 938.0,
+    "text": " they also have their own invoke function."
+  },
+  {
+    "start": 938.0,
+    "end": 939.0,
+    "text": " So, what we are doing is,"
+  },
+  {
+    "start": 939.0,
+    "end": 941.0,
+    "text": " we are taking this tool,"
+  },
+  {
+    "start": 941.0,
+    "end": 943.0,
+    "text": " and calling the invoke function."
+  },
+  {
+    "start": 943.0,
+    "end": 945.0,
+    "text": " And here, you can give any term."
+  },
+  {
+    "start": 945.0,
+    "end": 947.0,
+    "text": " For now, I have put IPL News."
+  },
+  {
+    "start": 947.0,
+    "end": 948.0,
+    "text": " Now, IPL is running."
+  },
+  {
+    "start": 948.0,
+    "end": 950.0,
+    "text": " You can put anything here."
+  },
+  {
+    "start": 950.0,
+    "end": 951.0,
+    "text": " Whatever term you put here,"
+  },
+  {
+    "start": 951.0,
+    "end": 952.0,
+    "text": " behind the scenes,"
+  },
+  {
+    "start": 952.0,
+    "end": 955.0,
+    "text": " that query will be picked up,"
+  },
+  {
+    "start": 955.0,
+    "end": 958.0,
+    "text": " on DuckDuckGo's search engine."
+  },
+  {
+    "start": 958.0,
+    "end": 960.0,
+    "text": " There, the query will be searched."
+  },
+  {
+    "start": 960.0,
+    "end": 961.0,
+    "text": " The results that will come,"
+  },
+  {
+    "start": 961.0,
+    "end": 963.0,
+    "text": " you will get them back."
+  },
+  {
+    "start": 963.0,
+    "end": 964.0,
+    "text": " So, behind the scenes,"
+  },
+  {
+    "start": 964.0,
+    "end": 965.0,
+    "text": " all this is happening here."
+  },
+  {
+    "start": 965.0,
+    "end": 966.0,
+    "text": " And then, what I am doing is,"
+  },
+  {
+    "start": 966.0,
+    "end": 967.0,
+    "text": " I am printing the result."
+  },
+  {
+    "start": 967.0,
+    "end": 969.0,
+    "text": " So, if I run this code,"
+  },
+  {
+    "start": 970.0,
+    "end": 971.0,
+    "text": " then see this."
+  },
+  {
+    "start": 971.0,
+    "end": 973.0,
+    "text": " Virat Kohli's all time reading run getter."
+  },
+  {
+    "start": 973.0,
+    "end": 974.0,
+    "text": " Whatever it is."
+  },
+  {
+    "start": 974.0,
+    "end": 975.0,
+    "text": " And,"
+  },
+  {
+    "start": 975.0,
+    "end": 976.0,
+    "text": " after this,"
+  },
+  {
+    "start": 976.0,
+    "end": 977.0,
+    "text": " further on,"
+  },
+  {
+    "start": 977.0,
+    "end": 981.0,
+    "text": " CSK IPL player qualification scenario is telling you,"
+  },
+  {
+    "start": 981.0,
+    "end": 983.0,
+    "text": " with 4 points from 8 matches."
+  },
+  {
+    "start": 983.0,
+    "end": 985.0,
+    "text": " Whatever IPL you are following now,"
+  },
+  {
+    "start": 985.0,
+    "end": 986.0,
+    "text": " you will know that,"
+  },
+  {
+    "start": 986.0,
+    "end": 987.0,
+    "text": " this is your,"
+  },
+  {
+    "start": 988.0,
+    "end": 990.0,
+    "text": " IPL related news."
+  },
+  {
+    "start": 990.0,
+    "end": 991.0,
+    "text": " Okay."
+  },
+  {
+    "start": 991.0,
+    "end": 993.0,
+    "text": " According to this,"
+  },
+  {
+    "start": 993.0,
+    "end": 994.0,
+    "text": " you can search,"
+  },
+  {
+    "start": 994.0,
+    "end": 997.0,
+    "text": " Top News in India,"
+  },
+  {
+    "start": 997.0,
+    "end": 999.0,
+    "text": " today."
+  },
+  {
+    "start": 999.0,
+    "end": 1001.0,
+    "text": " So, here you will see,"
+  },
+  {
+    "start": 1001.0,
+    "end": 1004.0,
+    "text": " related news."
+  },
+  {
+    "start": 1004.0,
+    "end": 1006.0,
+    "text": " Pahalgam, Kashmir,"
+  },
+  {
+    "start": 1006.0,
+    "end": 1008.0,
+    "text": " whatever bad incident happened just now,"
+  },
+  {
+    "start": 1008.0,
+    "end": 1009.0,
+    "text": " news is being shown here."
+  },
+  {
+    "start": 1009.0,
+    "end": 1010.0,
+    "text": " Okay."
+  },
+  {
+    "start": 1010.0,
+    "end": 1012.0,
+    "text": " So, you can see,"
+  },
+  {
+    "start": 1012.0,
+    "end": 1013.0,
+    "text": " how easy it is,"
+  },
+  {
+    "start": 1013.0,
+    "end": 1014.0,
+    "text": " how easy it is,"
+  },
+  {
+    "start": 1014.0,
+    "end": 1015.0,
+    "text": " for you,"
+  },
+  {
+    "start": 1015.0,
+    "end": 1016.0,
+    "text": " to perform this search."
+  },
+  {
+    "start": 1016.0,
+    "end": 1017.0,
+    "text": " You can quickly,"
+  },
+  {
+    "start": 1017.0,
+    "end": 1018.0,
+    "text": " integrate this tool,"
+  },
+  {
+    "start": 1018.0,
+    "end": 1019.0,
+    "text": " with LLM."
+  },
+  {
+    "start": 1019.0,
+    "end": 1020.0,
+    "text": " And,"
+  },
+  {
+    "start": 1020.0,
+    "end": 1021.0,
+    "text": " you can show your user,"
+  },
+  {
+    "start": 1021.0,
+    "end": 1023.0,
+    "text": " anything in real time,"
+  },
+  {
+    "start": 1023.0,
+    "end": 1024.0,
+    "text": " whatever is needed."
+  },
+  {
+    "start": 1024.0,
+    "end": 1025.0,
+    "text": " Okay."
+  },
+  {
+    "start": 1025.0,
+    "end": 1026.0,
+    "text": " So, this is the first tool,"
+  },
+  {
+    "start": 1026.0,
+    "end": 1027.0,
+    "text": " which I wanted to show you."
+  },
+  {
+    "start": 1027.0,
+    "end": 1028.0,
+    "text": " And, this is very popular."
+  },
+  {
+    "start": 1028.0,
+    "end": 1029.0,
+    "text": " Means,"
+  },
+  {
+    "start": 1029.0,
+    "end": 1031.0,
+    "text": " this will be seen in many use cases."
+  },
+  {
+    "start": 1031.0,
+    "end": 1032.0,
+    "text": " Okay."
+  },
+  {
+    "start": 1032.0,
+    "end": 1033.0,
+    "text": " After this,"
+  },
+  {
+    "start": 1033.0,
+    "end": 1034.0,
+    "text": " one more tool,"
+  },
+  {
+    "start": 1034.0,
+    "end": 1035.0,
+    "text": " which I want to show you,"
+  },
+  {
+    "start": 1035.0,
+    "end": 1036.0,
+    "text": " is the shell tool."
+  },
+  {
+    "start": 1036.0,
+    "end": 1037.0,
+    "text": " So,"
+  },
+  {
+    "start": 1037.0,
+    "end": 1038.0,
+    "text": " I told you a little while ago,"
+  },
+  {
+    "start": 1038.0,
+    "end": 1039.0,
+    "text": " what is a shell tool?"
+  },
+  {
+    "start": 1039.0,
+    "end": 1040.0,
+    "text": " With the help of this,"
+  },
+  {
+    "start": 1040.0,
+    "end": 1041.0,
+    "text": " you can go to the command line,"
+  },
+  {
+    "start": 1041.0,
+    "end": 1042.0,
+    "text": " and execute commands."
+  },
+  {
+    "start": 1042.0,
+    "end": 1043.0,
+    "text": " Whichever machine,"
+  },
+  {
+    "start": 1043.0,
+    "end": 1044.0,
+    "text": " this code is running."
+  },
+  {
+    "start": 1044.0,
+    "end": 1045.0,
+    "text": " So,"
+  },
+  {
+    "start": 1045.0,
+    "end": 1046.0,
+    "text": " we again said,"
+  },
+  {
+    "start": 1046.0,
+    "end": 1047.0,
+    "text": " import the shell tool,"
+  },
+  {
+    "start": 1047.0,
+    "end": 1048.0,
+    "text": " from the landchain community,"
+  },
+  {
+    "start": 1048.0,
+    "end": 1049.0,
+    "text": " with the help of the tool."
+  },
+  {
+    "start": 1049.0,
+    "end": 1050.0,
+    "text": " In the same way,"
+  },
+  {
+    "start": 1050.0,
+    "end": 1051.0,
+    "text": " we made the object again."
+  },
+  {
+    "start": 1051.0,
+    "end": 1052.0,
+    "text": " And,"
+  },
+  {
+    "start": 1052.0,
+    "end": 1053.0,
+    "text": " this is also a runnable."
+  },
+  {
+    "start": 1053.0,
+    "end": 1054.0,
+    "text": " So, I called invoke."
+  },
+  {
+    "start": 1054.0,
+    "end": 1055.0,
+    "text": " And,"
+  },
+  {
+    "start": 1055.0,
+    "end": 1056.0,
+    "text": " here I passed this command,"
+  },
+  {
+    "start": 1056.0,
+    "end": 1057.0,
+    "text": " whoami."
+  },
+  {
+    "start": 1057.0,
+    "end": 1058.0,
+    "text": " Which will tell,"
+  },
+  {
+    "start": 1058.0,
+    "end": 1059.0,
+    "text": " what is the name of my user,"
+  },
+  {
+    "start": 1059.0,
+    "end": 1060.0,
+    "text": " on the current machine."
+  },
+  {
+    "start": 1060.0,
+    "end": 1061.0,
+    "text": " So,"
+  },
+  {
+    "start": 1061.0,
+    "end": 1062.0,
+    "text": " if I run this code,"
+  },
+  {
+    "start": 1062.0,
+    "end": 1063.0,
+    "text": " then,"
+  },
+  {
+    "start": 1063.0,
+    "end": 1064.0,
+    "text": " this is running on Google call app."
+  },
+  {
+    "start": 1064.0,
+    "end": 1065.0,
+    "text": " Okay."
+  },
+  {
+    "start": 1065.0,
+    "end": 1066.0,
+    "text": " There is some issue,"
+  },
+  {
+    "start": 1066.0,
+    "end": 1067.0,
+    "text": " with the import."
+  },
+  {
+    "start": 1067.0,
+    "end": 1068.0,
+    "text": " So,"
+  },
+  {
+    "start": 1068.0,
+    "end": 1069.0,
+    "text": " I will pause the video,"
+  },
+  {
+    "start": 1069.0,
+    "end": 1070.0,
+    "text": " and,"
+  },
+  {
+    "start": 1070.0,
+    "end": 1071.0,
+    "text": " figure out,"
+  },
+  {
+    "start": 1071.0,
+    "end": 1072.0,
+    "text": " what is the name of the user."
+  },
+  {
+    "start": 1072.0,
+    "end": 1073.0,
+    "text": " So,"
+  },
+  {
+    "start": 1073.0,
+    "end": 1074.0,
+    "text": " I will pause the video,"
+  },
+  {
+    "start": 1074.0,
+    "end": 1075.0,
+    "text": " and,"
+  },
+  {
+    "start": 1075.0,
+    "end": 1076.0,
+    "text": " try to figure out,"
+  },
+  {
+    "start": 1076.0,
+    "end": 1077.0,
+    "text": " the name of the user."
+  },
+  {
+    "start": 1077.0,
+    "end": 1078.0,
+    "text": " So,"
+  },
+  {
+    "start": 1078.0,
+    "end": 1079.0,
+    "text": " yeah guys,"
+  },
+  {
+    "start": 1079.0,
+    "end": 1080.0,
+    "text": " this problem is solved."
+  },
+  {
+    "start": 1080.0,
+    "end": 1081.0,
+    "text": " So,"
+  },
+  {
+    "start": 1081.0,
+    "end": 1082.0,
+    "text": " actually,"
+  },
+  {
+    "start": 1082.0,
+    "end": 1083.0,
+    "text": " you have to install,"
+  },
+  {
+    "start": 1083.0,
+    "end": 1084.0,
+    "text": " this dependency,"
+  },
+  {
+    "start": 1084.0,
+    "end": 1085.0,
+    "text": " landchain experimental."
+  },
+  {
+    "start": 1085.0,
+    "end": 1086.0,
+    "text": " Without this,"
+  },
+  {
+    "start": 1086.0,
+    "end": 1087.0,
+    "text": " shell tool is not working."
+  },
+  {
+    "start": 1087.0,
+    "end": 1088.0,
+    "text": " So,"
+  },
+  {
+    "start": 1088.0,
+    "end": 1089.0,
+    "text": " we have installed,"
+  },
+  {
+    "start": 1089.0,
+    "end": 1090.0,
+    "text": " that dependency."
+  },
+  {
+    "start": 1090.0,
+    "end": 1091.0,
+    "text": " And,"
+  },
+  {
+    "start": 1091.0,
+    "end": 1092.0,
+    "text": " after that,"
+  },
+  {
+    "start": 1092.0,
+    "end": 1093.0,
+    "text": " when I run this code,"
+  },
+  {
+    "start": 1093.0,
+    "end": 1094.0,
+    "text": " whoami,"
+  },
+  {
+    "start": 1094.0,
+    "end": 1095.0,
+    "text": " then,"
+  },
+  {
+    "start": 1095.0,
+    "end": 1096.0,
+    "text": " see,"
+  },
+  {
+    "start": 1096.0,
+    "end": 1097.0,
+    "text": " the result is here."
+  },
+  {
+    "start": 1097.0,
+    "end": 1098.0,
+    "text": " This current computer,"
+  },
+  {
+    "start": 1098.0,
+    "end": 1099.0,
+    "text": " on which our program is running,"
+  },
+  {
+    "start": 1099.0,
+    "end": 1100.0,
+    "text": " will be the server of Google call app."
+  },
+  {
+    "start": 1100.0,
+    "end": 1101.0,
+    "text": " There,"
+  },
+  {
+    "start": 1101.0,
+    "end": 1102.0,
+    "text": " the name of our user is,"
+  },
+  {
+    "start": 1102.0,
+    "end": 1103.0,
+    "text": " root."
+  },
+  {
+    "start": 1103.0,
+    "end": 1104.0,
+    "text": " Okay."
+  },
+  {
+    "start": 1104.0,
+    "end": 1105.0,
+    "text": " And,"
+  },
+  {
+    "start": 1105.0,
+    "end": 1106.0,
+    "text": " here,"
+  },
+  {
+    "start": 1106.0,
+    "end": 1107.0,
+    "text": " you can also use,"
+  },
+  {
+    "start": 1107.0,
+    "end": 1108.0,
+    "text": " ls,"
+  },
+  {
+    "start": 1108.0,
+    "end": 1109.0,
+    "text": " to list,"
+  },
+  {
+    "start": 1109.0,
+    "end": 1110.0,
+    "text": " all the files,"
+  },
+  {
+    "start": 1110.0,
+    "end": 1111.0,
+    "text": " in the current directory."
+  },
+  {
+    "start": 1111.0,
+    "end": 1112.0,
+    "text": " So,"
+  },
+  {
+    "start": 1112.0,
+    "end": 1113.0,
+    "text": " you can see,"
+  },
+  {
+    "start": 1113.0,
+    "end": 1114.0,
+    "text": " a sample data,"
+  },
+  {
+    "start": 1114.0,
+    "end": 1115.0,
+    "text": " folder is being displayed."
+  },
+  {
+    "start": 1115.0,
+    "end": 1116.0,
+    "text": " Which is true,"
+  },
+  {
+    "start": 1116.0,
+    "end": 1117.0,
+    "text": " if you worked with Google call app,"
+  },
+  {
+    "start": 1117.0,
+    "end": 1118.0,
+    "text": " then you will know,"
+  },
+  {
+    "start": 1118.0,
+    "end": 1119.0,
+    "text": " that there,"
+  },
+  {
+    "start": 1119.0,
+    "end": 1120.0,
+    "text": " you get,"
+  },
+  {
+    "start": 1120.0,
+    "end": 1121.0,
+    "text": " a sample data,"
+  },
+  {
+    "start": 1121.0,
+    "end": 1122.0,
+    "text": " called folder."
+  },
+  {
+    "start": 1122.0,
+    "end": 1123.0,
+    "text": " So here,"
+  },
+  {
+    "start": 1123.0,
+    "end": 1124.0,
+    "text": " you can run many commands,"
+  },
+  {
+    "start": 1124.0,
+    "end": 1125.0,
+    "text": " whatever,"
+  },
+  {
+    "start": 1125.0,
+    "end": 1126.0,
+    "text": " command line,"
+  },
+  {
+    "start": 1126.0,
+    "end": 1127.0,
+    "text": " you have learned."
+  },
+  {
+    "start": 1127.0,
+    "end": 1128.0,
+    "text": " So,"
+  },
+  {
+    "start": 1128.0,
+    "end": 1129.0,
+    "text": " you can run,"
+  },
+  {
+    "start": 1129.0,
+    "end": 1130.0,
+    "text": " those commands."
+  },
+  {
+    "start": 1130.0,
+    "end": 1131.0,
+    "text": " This tool,"
+  },
+  {
+    "start": 1131.0,
+    "end": 1132.0,
+    "text": " is useful,"
+  },
+  {
+    "start": 1132.0,
+    "end": 1133.0,
+    "text": " but,"
+  },
+  {
+    "start": 1133.0,
+    "end": 1140.0,
+    "text": " especially in production setup, be careful because you are executing command line arguments"
+  },
+  {
+    "start": 1140.0,
+    "end": 1144.0,
+    "text": " so some files can be deleted, so just be careful about this"
+  },
+  {
+    "start": 1144.0,
+    "end": 1150.0,
+    "text": " so in a nutshell I just wanted to show you how easy it is to use the built in tools of the land chain"
+  },
+  {
+    "start": 1150.0,
+    "end": 1157.0,
+    "text": " so these are two very basic tools but if you want to see the complete list of built in tools that I have available"
+  },
+  {
+    "start": 1157.0,
+    "end": 1165.0,
+    "text": " then you have to go to this link, here you will get the list of all the built in tools that exist in the land chain"
+  },
+  {
+    "start": 1165.0,
+    "end": 1174.0,
+    "text": " like there are many tools related to search, like bing, brave, dug dug go, google is also different"
+  },
+  {
+    "start": 1174.0,
+    "end": 1186.0,
+    "text": " then you have different tools to run your code, productivity related tools are github, jira, office, slack, twilio"
+  },
+  {
+    "start": 1186.0,
+    "end": 1187.0,
+    "text": " and so on"
+  },
+  {
+    "start": 1187.0,
+    "end": 1192.0,
+    "text": " there are different tools for web browsing, different tools for databases, finance and this is the complete list"
+  },
+  {
+    "start": 1192.0,
+    "end": 1204.0,
+    "text": " now the good thing is that you can go to any of these tools and for example we will go to this"
+  },
+  {
+    "start": 1204.0,
+    "end": 1210.0,
+    "text": " so here you will get the complete description and a working code"
+  },
+  {
+    "start": 1210.0,
+    "end": 1215.0,
+    "text": " what you can do is you can go through and learn to run that tool"
+  },
+  {
+    "start": 1215.0,
+    "end": 1216.0,
+    "text": " mostly things are very simple"
+  },
+  {
+    "start": 1216.0,
+    "end": 1217.0,
+    "text": " in fact, you can do this by going through the tools and learning to run them"
+  },
+  {
+    "start": 1217.0,
+    "end": 1225.0,
+    "text": " in fact, in some places you can not only work with that tool but at the same time you can also use it to build an agent"
+  },
+  {
+    "start": 1225.0,
+    "end": 1227.0,
+    "text": " so it is a very good documentation"
+  },
+  {
+    "start": 1227.0,
+    "end": 1232.0,
+    "text": " I would recommend you to go through the tools that you find interesting"
+  },
+  {
+    "start": 1232.0,
+    "end": 1238.0,
+    "text": " so now you have some idea about how to use built in tools in land chain"
+  },
+  {
+    "start": 1238.0,
+    "end": 1246.0,
+    "text": " now let's talk about what if you come across a use case where no built in tool exists related to it"
+  },
+  {
+    "start": 1246.0,
+    "end": 1253.0,
+    "text": " in that case you have to make your own tool and that is what we are going to learn next"
+  },
+  {
+    "start": 1253.0,
+    "end": 1256.0,
+    "text": " how to make custom tools in land chain"
+  },
+  {
+    "start": 1256.0,
+    "end": 1267.0,
+    "text": " now you have understood about custom tools that you have to make custom tools when you do not have any built in tool for your use case"
+  },
+  {
+    "start": 1267.0,
+    "end": 1274.0,
+    "text": " but I would like to give you a general outline that when does it happen that you have to make custom tools"
+  },
+  {
+    "start": 1274.0,
+    "end": 1282.0,
+    "text": " so these are some of the most popular use cases where you have to make custom tools"
+  },
+  {
+    "start": 1282.0,
+    "end": 1289.0,
+    "text": " first when you want to call your own API's in your application"
+  },
+  {
+    "start": 1289.0,
+    "end": 1295.0,
+    "text": " suppose you have a big application like make my trip"
+  },
+  {
+    "start": 1295.0,
+    "end": 1299.0,
+    "text": " where there is a lot of travel booking and hotel booking"
+  },
+  {
+    "start": 1299.0,
+    "end": 1303.0,
+    "text": " now for this you want to make an agent for your website"
+  },
+  {
+    "start": 1303.0,
+    "end": 1309.0,
+    "text": " where the user will not only talk to that agent but also book the booking"
+  },
+  {
+    "start": 1309.0,
+    "end": 1313.0,
+    "text": " so now what you need to do to make this agent work is that"
+  },
+  {
+    "start": 1313.0,
+    "end": 1319.0,
+    "text": " he can enter your database and perform the bookings"
+  },
+  {
+    "start": 1319.0,
+    "end": 1323.0,
+    "text": " so all this can be done through API's"
+  },
+  {
+    "start": 1323.0,
+    "end": 1328.0,
+    "text": " so somehow your agent will have to connect with your API's"
+  },
+  {
+    "start": 1328.0,
+    "end": 1332.0,
+    "text": " so to perform this work you have to make custom tools"
+  },
+  {
+    "start": 1332.0,
+    "end": 1338.0,
+    "text": " second use case is that you want to encapsulate your business logic"
+  },
+  {
+    "start": 1338.0,
+    "end": 1341.0,
+    "text": " which is again unique to your application"
+  },
+  {
+    "start": 1341.0,
+    "end": 1345.0,
+    "text": " so for that you will not get built in tool so you have to make custom tools for that"
+  },
+  {
+    "start": 1345.0,
+    "end": 1352.0,
+    "text": " and lastly if you want your LLM to interact with your own database, product or app"
+  },
+  {
+    "start": 1352.0,
+    "end": 1360.0,
+    "text": " so basically in a nutshell if you already have an application and you want to make an agent for that application"
+  },
+  {
+    "start": 1360.0,
+    "end": 1363.0,
+    "text": " then you have to make custom tools for that application"
+  },
+  {
+    "start": 1363.0,
+    "end": 1366.0,
+    "text": " so to interact with that agent with your existing application infrastructure"
+  },
+  {
+    "start": 1366.0,
+    "end": 1370.0,
+    "text": " you will have to make custom tools for that application"
+  },
+  {
+    "start": 1370.0,
+    "end": 1373.0,
+    "text": " and that can't be provided by a land chain"
+  },
+  {
+    "start": 1373.0,
+    "end": 1378.0,
+    "text": " so now I will show you a use case where we have an existing database"
+  },
+  {
+    "start": 1378.0,
+    "end": 1384.0,
+    "text": " and then we will create tools with which our agent can communicate with our database"
+  },
+  {
+    "start": 1384.0,
+    "end": 1388.0,
+    "text": " so let's do one thing first of all I will show you that"
+  },
+  {
+    "start": 1388.0,
+    "end": 1392.0,
+    "text": " how you can make your own tool in land chain"
+  },
+  {
+    "start": 1392.0,
+    "end": 1397.0,
+    "text": " we will take a very simple example but that will clear everything for you"
+  },
+  {
+    "start": 1397.0,
+    "end": 1401.0,
+    "text": " also there are multiple ways to make your own tool in land chain"
+  },
+  {
+    "start": 1401.0,
+    "end": 1405.0,
+    "text": " what I am going to tell you now is the simplest and straight forward way"
+  },
+  {
+    "start": 1405.0,
+    "end": 1409.0,
+    "text": " but going forward I will tell you more other ways"
+  },
+  {
+    "start": 1409.0,
+    "end": 1412.0,
+    "text": " so let's go back to the code"
+  },
+  {
+    "start": 1412.0,
+    "end": 1415.0,
+    "text": " now first of all what you have to do is"
+  },
+  {
+    "start": 1415.0,
+    "end": 1417.0,
+    "text": " from the land chain core.tool"
+  },
+  {
+    "start": 1417.0,
+    "end": 1420.0,
+    "text": " you have to import the tool"
+  },
+  {
+    "start": 1420.0,
+    "end": 1425.0,
+    "text": " now making a tool is a three step process"
+  },
+  {
+    "start": 1425.0,
+    "end": 1430.0,
+    "text": " first of all you have to make a function for your tool"
+  },
+  {
+    "start": 1430.0,
+    "end": 1434.0,
+    "text": " so let's assume we are taking a very simple use case"
+  },
+  {
+    "start": 1434.0,
+    "end": 1439.0,
+    "text": " let's assume our LLM doesn't know how to do multiplication"
+  },
+  {
+    "start": 1439.0,
+    "end": 1441.0,
+    "text": " because it doesn't know mathematics"
+  },
+  {
+    "start": 1441.0,
+    "end": 1444.0,
+    "text": " so what we are doing is we are building an external function"
+  },
+  {
+    "start": 1444.0,
+    "end": 1446.0,
+    "text": " which if you give two numbers"
+  },
+  {
+    "start": 1446.0,
+    "end": 1452.0,
+    "text": " then that function will return the product of those two numbers"
+  },
+  {
+    "start": 1452.0,
+    "end": 1456.0,
+    "text": " so what we did first is we made this function in step 1"
+  },
+  {
+    "start": 1456.0,
+    "end": 1458.0,
+    "text": " a very simple python function"
+  },
+  {
+    "start": 1458.0,
+    "end": 1460.0,
+    "text": " just like we have made in the past"
+  },
+  {
+    "start": 1460.0,
+    "end": 1462.0,
+    "text": " but one thing you will notice differently"
+  },
+  {
+    "start": 1462.0,
+    "end": 1466.0,
+    "text": " that we have added a docstring in this function"
+  },
+  {
+    "start": 1466.0,
+    "end": 1469.0,
+    "text": " which is telling us what this function does"
+  },
+  {
+    "start": 1469.0,
+    "end": 1474.0,
+    "text": " now this docstring is not necessary in this function"
+  },
+  {
+    "start": 1474.0,
+    "end": 1479.0,
+    "text": " but it is highly recommended that you provide this docstring"
+  },
+  {
+    "start": 1479.0,
+    "end": 1481.0,
+    "text": " because with the help of this docstring"
+  },
+  {
+    "start": 1481.0,
+    "end": 1483.0,
+    "text": " in future our LLM will understand"
+  },
+  {
+    "start": 1483.0,
+    "end": 1487.0,
+    "text": " what this function or this tool does"
+  },
+  {
+    "start": 1487.0,
+    "end": 1491.0,
+    "text": " so it is highly recommended that you add this docstring"
+  },
+  {
+    "start": 1491.0,
+    "end": 1493.0,
+    "text": " so step 1 is done we have made this function"
+  },
+  {
+    "start": 1493.0,
+    "end": 1498.0,
+    "text": " step 2 you add type hinting in your function"
+  },
+  {
+    "start": 1498.0,
+    "end": 1501.0,
+    "text": " so if you want a and b in the input"
+  },
+  {
+    "start": 1501.0,
+    "end": 1504.0,
+    "text": " then you will tell what type of a and b is going to be there"
+  },
+  {
+    "start": 1504.0,
+    "end": 1508.0,
+    "text": " if your function returns an integer"
+  },
+  {
+    "start": 1508.0,
+    "end": 1511.0,
+    "text": " then you will tell that this function returns an integer"
+  },
+  {
+    "start": 1511.0,
+    "end": 1513.0,
+    "text": " we call this type hinting"
+  },
+  {
+    "start": 1513.0,
+    "end": 1517.0,
+    "text": " now this is not an important step either"
+  },
+  {
+    "start": 1517.0,
+    "end": 1521.0,
+    "text": " but it is highly recommended that you write in the function"
+  },
+  {
+    "start": 1521.0,
+    "end": 1526.0,
+    "text": " this way LLM understands what type of data it has to give in the input"
+  },
+  {
+    "start": 1526.0,
+    "end": 1530.0,
+    "text": " and what type of data it can expect by turning it over with this tool"
+  },
+  {
+    "start": 1530.0,
+    "end": 1532.0,
+    "text": " so in step 1 we made the function"
+  },
+  {
+    "start": 1532.0,
+    "end": 1534.0,
+    "text": " in step 2 we added type hinting"
+  },
+  {
+    "start": 1534.0,
+    "end": 1536.0,
+    "text": " now comes the final step"
+  },
+  {
+    "start": 1536.0,
+    "end": 1544.0,
+    "text": " where you put at the rate tool decorator on top of this function"
+  },
+  {
+    "start": 1544.0,
+    "end": 1547.0,
+    "text": " now what does at the rate tool decorator do"
+  },
+  {
+    "start": 1547.0,
+    "end": 1550.0,
+    "text": " it makes this function a special function"
+  },
+  {
+    "start": 1550.0,
+    "end": 1552.0,
+    "text": " and what can this special function do"
+  },
+  {
+    "start": 1552.0,
+    "end": 1554.0,
+    "text": " it can communicate with LLM"
+  },
+  {
+    "start": 1554.0,
+    "end": 1559.0,
+    "text": " or it can communicate with this function"
+  },
+  {
+    "start": 1559.0,
+    "end": 1562.0,
+    "text": " so all the magic is hidden in this decorator"
+  },
+  {
+    "start": 1562.0,
+    "end": 1564.0,
+    "text": " so going forward"
+  },
+  {
+    "start": 1564.0,
+    "end": 1567.0,
+    "text": " if you want to make any tool of your own"
+  },
+  {
+    "start": 1567.0,
+    "end": 1570.0,
+    "text": " then you have to do only 3 things"
+  },
+  {
+    "start": 1570.0,
+    "end": 1571.0,
+    "text": " first"
+  },
+  {
+    "start": 1571.0,
+    "end": 1573.0,
+    "text": " write the logic of that function"
+  },
+  {
+    "start": 1573.0,
+    "end": 1575.0,
+    "text": " second add type hinting"
+  },
+  {
+    "start": 1575.0,
+    "end": 1579.0,
+    "text": " and third add at the rate tool decorator on top of that"
+  },
+  {
+    "start": 1579.0,
+    "end": 1580.0,
+    "text": " and that's it"
+  },
+  {
+    "start": 1580.0,
+    "end": 1581.0,
+    "text": " by doing this much"
+  },
+  {
+    "start": 1581.0,
+    "end": 1584.0,
+    "text": " your tool will be made"
+  },
+  {
+    "start": 1584.0,
+    "end": 1586.0,
+    "text": " now the tool is made"
+  },
+  {
+    "start": 1586.0,
+    "end": 1589.0,
+    "text": " now I will show you how you can use this tool"
+  },
+  {
+    "start": 1589.0,
+    "end": 1591.0,
+    "text": " so you don't have to do anything"
+  },
+  {
+    "start": 1591.0,
+    "end": 1594.0,
+    "text": " you just need to call the name of this tool"
+  },
+  {
+    "start": 1594.0,
+    "end": 1596.0,
+    "text": " multiply"
+  },
+  {
+    "start": 1596.0,
+    "end": 1598.0,
+    "text": " and since this is a tool"
+  },
+  {
+    "start": 1598.0,
+    "end": 1600.0,
+    "text": " it means it is runnable"
+  },
+  {
+    "start": 1600.0,
+    "end": 1602.0,
+    "text": " so it has invoke function"
+  },
+  {
+    "start": 1602.0,
+    "end": 1604.0,
+    "text": " and what you will do in invoke function"
+  },
+  {
+    "start": 1604.0,
+    "end": 1606.0,
+    "text": " you will pass a dictionary"
+  },
+  {
+    "start": 1606.0,
+    "end": 1608.0,
+    "text": " where you will tell"
+  },
+  {
+    "start": 1608.0,
+    "end": 1611.0,
+    "text": " what is the value for every input"
+  },
+  {
+    "start": 1611.0,
+    "end": 1612.0,
+    "text": " so I am telling you"
+  },
+  {
+    "start": 1612.0,
+    "end": 1614.0,
+    "text": " pass this function in A as 3"
+  },
+  {
+    "start": 1614.0,
+    "end": 1616.0,
+    "text": " and pass in B as 5"
+  },
+  {
+    "start": 1616.0,
+    "end": 1618.0,
+    "text": " and I have run this code"
+  },
+  {
+    "start": 1618.0,
+    "end": 1620.0,
+    "text": " and now I am printing the result"
+  },
+  {
+    "start": 1620.0,
+    "end": 1622.0,
+    "text": " and you can see 15"
+  },
+  {
+    "start": 1622.0,
+    "end": 1624.0,
+    "text": " so I know nothing special happened"
+  },
+  {
+    "start": 1624.0,
+    "end": 1626.0,
+    "text": " we are simply using a function"
+  },
+  {
+    "start": 1626.0,
+    "end": 1629.0,
+    "text": " but this function is not a normal function"
+  },
+  {
+    "start": 1629.0,
+    "end": 1630.0,
+    "text": " this is a tool"
+  },
+  {
+    "start": 1630.0,
+    "end": 1632.0,
+    "text": " and with this tool"
+  },
+  {
+    "start": 1632.0,
+    "end": 1633.0,
+    "text": " LLM can interact"
+  },
+  {
+    "start": 1633.0,
+    "end": 1635.0,
+    "text": " which I will show you in the next video"
+  },
+  {
+    "start": 1635.0,
+    "end": 1637.0,
+    "text": " when I will teach you the concept of tool calling"
+  },
+  {
+    "start": 1637.0,
+    "end": 1640.0,
+    "text": " but now we have just created our first tool"
+  },
+  {
+    "start": 1640.0,
+    "end": 1645.0,
+    "text": " now I will show you how this function is special"
+  },
+  {
+    "start": 1645.0,
+    "end": 1647.0,
+    "text": " this tool has some other capabilities"
+  },
+  {
+    "start": 1647.0,
+    "end": 1649.0,
+    "text": " like if you take the name of this tool"
+  },
+  {
+    "start": 1649.0,
+    "end": 1652.0,
+    "text": " and print the dot name"
+  },
+  {
+    "start": 1652.0,
+    "end": 1655.0,
+    "text": " then you will see the name of this tool"
+  },
+  {
+    "start": 1655.0,
+    "end": 1657.0,
+    "text": " similarly if you take this tool"
+  },
+  {
+    "start": 1657.0,
+    "end": 1659.0,
+    "text": " and print the dot description"
+  },
+  {
+    "start": 1659.0,
+    "end": 1661.0,
+    "text": " then you will get the description of this tool"
+  },
+  {
+    "start": 1661.0,
+    "end": 1663.0,
+    "text": " and if you take this tool"
+  },
+  {
+    "start": 1663.0,
+    "end": 1665.0,
+    "text": " and print the dot arguments"
+  },
+  {
+    "start": 1665.0,
+    "end": 1667.0,
+    "text": " then you will see all the arguments"
+  },
+  {
+    "start": 1667.0,
+    "end": 1669.0,
+    "text": " which are required to work on this tool"
+  },
+  {
+    "start": 1669.0,
+    "end": 1671.0,
+    "text": " so if I run this cell"
+  },
+  {
+    "start": 1671.0,
+    "end": 1673.0,
+    "text": " then see this is the name of our tool"
+  },
+  {
+    "start": 1673.0,
+    "end": 1676.0,
+    "text": " this is generally the name of the function"
+  },
+  {
+    "start": 1676.0,
+    "end": 1678.0,
+    "text": " after that what is the description of the tool?"
+  },
+  {
+    "start": 1678.0,
+    "end": 1680.0,
+    "text": " multiply two numbers"
+  },
+  {
+    "start": 1680.0,
+    "end": 1682.0,
+    "text": " this is exactly the thing"
+  },
+  {
+    "start": 1682.0,
+    "end": 1684.0,
+    "text": " which you provided in the doc string"
+  },
+  {
+    "start": 1684.0,
+    "end": 1686.0,
+    "text": " and lastly"
+  },
+  {
+    "start": 1686.0,
+    "end": 1688.0,
+    "text": " this is your arguments"
+  },
+  {
+    "start": 1688.0,
+    "end": 1690.0,
+    "text": " so here it is being told that"
+  },
+  {
+    "start": 1690.0,
+    "end": 1692.0,
+    "text": " there are two arguments A and B"
+  },
+  {
+    "start": 1692.0,
+    "end": 1694.0,
+    "text": " the first one is capital A"
+  },
+  {
+    "start": 1694.0,
+    "end": 1696.0,
+    "text": " and the second one is capital B"
+  },
+  {
+    "start": 1696.0,
+    "end": 1698.0,
+    "text": " and what is their type?"
+  },
+  {
+    "start": 1698.0,
+    "end": 1699.0,
+    "text": " integer"
+  },
+  {
+    "start": 1699.0,
+    "end": 1701.0,
+    "text": " and where did this come from?"
+  },
+  {
+    "start": 1701.0,
+    "end": 1702.0,
+    "text": " from this type hunting"
+  },
+  {
+    "start": 1702.0,
+    "end": 1703.0,
+    "text": " which we provided"
+  },
+  {
+    "start": 1703.0,
+    "end": 1704.0,
+    "text": " so"
+  },
+  {
+    "start": 1704.0,
+    "end": 1705.0,
+    "text": " so"
+  },
+  {
+    "start": 1705.0,
+    "end": 1707.0,
+    "text": " whenever you have any tool"
+  },
+  {
+    "start": 1707.0,
+    "end": 1709.0,
+    "text": " you will get these three attributes"
+  },
+  {
+    "start": 1709.0,
+    "end": 1710.0,
+    "text": " in fact"
+  },
+  {
+    "start": 1710.0,
+    "end": 1712.0,
+    "text": " these three attributes"
+  },
+  {
+    "start": 1712.0,
+    "end": 1714.0,
+    "text": " you will get"
+  },
+  {
+    "start": 1714.0,
+    "end": 1716.0,
+    "text": " here also"
+  },
+  {
+    "start": 1716.0,
+    "end": 1717.0,
+    "text": " see this"
+  },
+  {
+    "start": 1717.0,
+    "end": 1719.0,
+    "text": " if I show you the duck duck go one"
+  },
+  {
+    "start": 1719.0,
+    "end": 1721.0,
+    "text": " so what we have to do is"
+  },
+  {
+    "start": 1721.0,
+    "end": 1723.0,
+    "text": " we have to"
+  },
+  {
+    "start": 1723.0,
+    "end": 1725.0,
+    "text": " replace the multiply"
+  },
+  {
+    "start": 1725.0,
+    "end": 1727.0,
+    "text": " with"
+  },
+  {
+    "start": 1727.0,
+    "end": 1729.0,
+    "text": " search tool"
+  },
+  {
+    "start": 1729.0,
+    "end": 1731.0,
+    "text": " and since this is also a tool"
+  },
+  {
+    "start": 1731.0,
+    "end": 1733.0,
+    "text": " then it also has a name"
+  },
+  {
+    "start": 1733.0,
+    "end": 1735.0,
+    "text": " it also has a description"
+  },
+  {
+    "start": 1735.0,
+    "end": 1737.0,
+    "text": " and it also has a name"
+  },
+  {
+    "start": 1737.0,
+    "end": 1738.0,
+    "text": " of arguments"
+  },
+  {
+    "start": 1738.0,
+    "end": 1740.0,
+    "text": " see this"
+  },
+  {
+    "start": 1740.0,
+    "end": 1742.0,
+    "text": " this tool's name is duck duck go search"
+  },
+  {
+    "start": 1742.0,
+    "end": 1744.0,
+    "text": " this is the description"
+  },
+  {
+    "start": 1744.0,
+    "end": 1745.0,
+    "text": " a wrapper around duck duck go search"
+  },
+  {
+    "start": 1745.0,
+    "end": 1748.0,
+    "text": " useful when you need an answer question about current events"
+  },
+  {
+    "start": 1748.0,
+    "end": 1750.0,
+    "text": " input should be a search query"
+  },
+  {
+    "start": 1750.0,
+    "end": 1751.0,
+    "text": " and this is your"
+  },
+  {
+    "start": 1751.0,
+    "end": 1753.0,
+    "text": " arguments parameter"
+  },
+  {
+    "start": 1753.0,
+    "end": 1755.0,
+    "text": " ok"
+  },
+  {
+    "start": 1755.0,
+    "end": 1756.0,
+    "text": " I hope"
+  },
+  {
+    "start": 1756.0,
+    "end": 1758.0,
+    "text": " you are understanding things till here"
+  },
+  {
+    "start": 1758.0,
+    "end": 1761.0,
+    "text": " that any tool which you will see in the land chain"
+  },
+  {
+    "start": 1761.0,
+    "end": 1762.0,
+    "text": " associated with that tool"
+  },
+  {
+    "start": 1762.0,
+    "end": 1764.0,
+    "text": " you will get a name attribute"
+  },
+  {
+    "start": 1764.0,
+    "end": 1765.0,
+    "text": " description attribute"
+  },
+  {
+    "start": 1765.0,
+    "end": 1766.0,
+    "text": " arguments attribute"
+  },
+  {
+    "start": 1766.0,
+    "end": 1767.0,
+    "text": " ok?"
+  },
+  {
+    "start": 1767.0,
+    "end": 1769.0,
+    "text": " one more thing I want to show you"
+  },
+  {
+    "start": 1769.0,
+    "end": 1771.0,
+    "text": " that when you"
+  },
+  {
+    "start": 1771.0,
+    "end": 1773.0,
+    "text": " send this tool"
+  },
+  {
+    "start": 1773.0,
+    "end": 1775.0,
+    "text": " to LLM"
+  },
+  {
+    "start": 1775.0,
+    "end": 1777.0,
+    "text": " then what does LLM see?"
+  },
+  {
+    "start": 1777.0,
+    "end": 1779.0,
+    "text": " LLM does not see this tool"
+  },
+  {
+    "start": 1779.0,
+    "end": 1781.0,
+    "text": " LLM sees this"
+  },
+  {
+    "start": 1781.0,
+    "end": 1783.0,
+    "text": " if you run this piece of code"
+  },
+  {
+    "start": 1783.0,
+    "end": 1785.0,
+    "text": " then you will see a"
+  },
+  {
+    "start": 1785.0,
+    "end": 1787.0,
+    "text": " big JSON schema"
+  },
+  {
+    "start": 1787.0,
+    "end": 1789.0,
+    "text": " if I can show you by copying it"
+  },
+  {
+    "start": 1789.0,
+    "end": 1791.0,
+    "text": " in a better way"
+  },
+  {
+    "start": 1791.0,
+    "end": 1793.0,
+    "text": " copy"
+  },
+  {
+    "start": 1793.0,
+    "end": 1795.0,
+    "text": " we are going to a JSON formatter"
+  },
+  {
+    "start": 1795.0,
+    "end": 1796.0,
+    "text": " and we are going to paste it here"
+  },
+  {
+    "start": 1796.0,
+    "end": 1798.0,
+    "text": " and we are going to process it"
+  },
+  {
+    "start": 1798.0,
+    "end": 1800.0,
+    "text": " see this"
+  },
+  {
+    "start": 1800.0,
+    "end": 1802.0,
+    "text": " so when we"
+  },
+  {
+    "start": 1802.0,
+    "end": 1804.0,
+    "text": " connect our tool and LLM"
+  },
+  {
+    "start": 1804.0,
+    "end": 1806.0,
+    "text": " then LLM actually sees this thing"
+  },
+  {
+    "start": 1806.0,
+    "end": 1808.0,
+    "text": " rather than"
+  },
+  {
+    "start": 1808.0,
+    "end": 1810.0,
+    "text": " we send the logic of that function"
+  },
+  {
+    "start": 1810.0,
+    "end": 1812.0,
+    "text": " to LLM"
+  },
+  {
+    "start": 1812.0,
+    "end": 1814.0,
+    "text": " which is visible on your screen"
+  },
+  {
+    "start": 1814.0,
+    "end": 1816.0,
+    "text": " this is your"
+  },
+  {
+    "start": 1816.0,
+    "end": 1818.0,
+    "text": " tool's schema"
+  },
+  {
+    "start": 1818.0,
+    "end": 1820.0,
+    "text": " so whenever you connect"
+  },
+  {
+    "start": 1820.0,
+    "end": 1822.0,
+    "text": " tool and LLM"
+  },
+  {
+    "start": 1822.0,
+    "end": 1824.0,
+    "text": " then you do not send tool to LLM"
+  },
+  {
+    "start": 1824.0,
+    "end": 1826.0,
+    "text": " but you send the logic of the tool to LLM"
+  },
+  {
+    "start": 1826.0,
+    "end": 1828.0,
+    "text": " so in this"
+  },
+  {
+    "start": 1828.0,
+    "end": 1830.0,
+    "text": " you can see"
+  },
+  {
+    "start": 1830.0,
+    "end": 1832.0,
+    "text": " it is very readable"
+  },
+  {
+    "start": 1832.0,
+    "end": 1834.0,
+    "text": " description is written"
+  },
+  {
+    "start": 1834.0,
+    "end": 1836.0,
+    "text": " in properties A and B"
+  },
+  {
+    "start": 1836.0,
+    "end": 1838.0,
+    "text": " both are required"
+  },
+  {
+    "start": 1838.0,
+    "end": 1840.0,
+    "text": " title is multiply"
+  },
+  {
+    "start": 1840.0,
+    "end": 1842.0,
+    "text": " and type is object"
+  },
+  {
+    "start": 1842.0,
+    "end": 1844.0,
+    "text": " so in this way"
+  },
+  {
+    "start": 1844.0,
+    "end": 1846.0,
+    "text": " you can generate your built in tools"
+  },
+  {
+    "start": 1846.0,
+    "end": 1848.0,
+    "text": " and see"
+  },
+  {
+    "start": 1848.0,
+    "end": 1850.0,
+    "text": " what information is going to LLM"
+  },
+  {
+    "start": 1850.0,
+    "end": 1852.0,
+    "text": " about this tool"
+  },
+  {
+    "start": 1852.0,
+    "end": 1854.0,
+    "text": " so I hope"
+  },
+  {
+    "start": 1854.0,
+    "end": 1856.0,
+    "text": " you understood the basic idea"
+  },
+  {
+    "start": 1856.0,
+    "end": 1858.0,
+    "text": " how you can create custom tools"
+  },
+  {
+    "start": 1858.0,
+    "end": 1860.0,
+    "text": " using langchain"
+  },
+  {
+    "start": 1860.0,
+    "end": 1862.0,
+    "text": " now I will tell you some more"
+  },
+  {
+    "start": 1862.0,
+    "end": 1864.0,
+    "text": " methods with which you can"
+  },
+  {
+    "start": 1864.0,
+    "end": 1866.0,
+    "text": " create custom tools"
+  },
+  {
+    "start": 1866.0,
+    "end": 1868.0,
+    "text": " now guys you have seen one method"
+  },
+  {
+    "start": 1868.0,
+    "end": 1870.0,
+    "text": " of creating tools with the help of"
+  },
+  {
+    "start": 1870.0,
+    "end": 1872.0,
+    "text": " tool decorator"
+  },
+  {
+    "start": 1872.0,
+    "end": 1874.0,
+    "text": " apart from this there are two more methods"
+  },
+  {
+    "start": 1874.0,
+    "end": 1876.0,
+    "text": " actually there are more than two methods"
+  },
+  {
+    "start": 1876.0,
+    "end": 1878.0,
+    "text": " but there are two more methods"
+  },
+  {
+    "start": 1878.0,
+    "end": 1880.0,
+    "text": " which you will see commonly"
+  },
+  {
+    "start": 1880.0,
+    "end": 1882.0,
+    "text": " one is"
+  },
+  {
+    "start": 1882.0,
+    "end": 1884.0,
+    "text": " to create tools with the help of"
+  },
+  {
+    "start": 1884.0,
+    "end": 1886.0,
+    "text": " structured tool and pidentic and second"
+  },
+  {
+    "start": 1886.0,
+    "end": 1888.0,
+    "text": " is to create tools with the help of"
+  },
+  {
+    "start": 1888.0,
+    "end": 1890.0,
+    "text": " base tool class"
+  },
+  {
+    "start": 1890.0,
+    "end": 1892.0,
+    "text": " so these three methods"
+  },
+  {
+    "start": 1892.0,
+    "end": 1894.0,
+    "text": " you will see commonly"
+  },
+  {
+    "start": 1894.0,
+    "end": 1896.0,
+    "text": " apart from this there are other methods"
+  },
+  {
+    "start": 1896.0,
+    "end": 1898.0,
+    "text": " but they were used earlier"
+  },
+  {
+    "start": 1898.0,
+    "end": 1900.0,
+    "text": " so lets discuss the second method"
+  },
+  {
+    "start": 1900.0,
+    "end": 1902.0,
+    "text": " how you can create a custom tool"
+  },
+  {
+    "start": 1902.0,
+    "end": 1904.0,
+    "text": " with the help of structured tool class"
+  },
+  {
+    "start": 1904.0,
+    "end": 1906.0,
+    "text": " and pidentic"
+  },
+  {
+    "start": 1906.0,
+    "end": 1908.0,
+    "text": " so"
+  },
+  {
+    "start": 1908.0,
+    "end": 1910.0,
+    "text": " here I have written a definition"
+  },
+  {
+    "start": 1910.0,
+    "end": 1912.0,
+    "text": " of structured tool"
+  },
+  {
+    "start": 1912.0,
+    "end": 1914.0,
+    "text": " so a structured tool in langchain"
+  },
+  {
+    "start": 1914.0,
+    "end": 1916.0,
+    "text": " is a special type of tool"
+  },
+  {
+    "start": 1916.0,
+    "end": 1918.0,
+    "text": " the input to the tool"
+  },
+  {
+    "start": 1918.0,
+    "end": 1920.0,
+    "text": " follows a structured schema"
+  },
+  {
+    "start": 1920.0,
+    "end": 1922.0,
+    "text": " typically defined using"
+  },
+  {
+    "start": 1922.0,
+    "end": 1924.0,
+    "text": " a pidentic model"
+  },
+  {
+    "start": 1924.0,
+    "end": 1926.0,
+    "text": " so the basic thing is"
+  },
+  {
+    "start": 1926.0,
+    "end": 1928.0,
+    "text": " that the second method"
+  },
+  {
+    "start": 1928.0,
+    "end": 1930.0,
+    "text": " is a little more strict"
+  },
+  {
+    "start": 1930.0,
+    "end": 1932.0,
+    "text": " of creating tools"
+  },
+  {
+    "start": 1932.0,
+    "end": 1934.0,
+    "text": " till now we were creating tools"
+  },
+  {
+    "start": 1934.0,
+    "end": 1936.0,
+    "text": " with the help of tools"
+  },
+  {
+    "start": 1936.0,
+    "end": 1938.0,
+    "text": " there we"
+  },
+  {
+    "start": 1938.0,
+    "end": 1940.0,
+    "text": " were sending the inputs in our function"
+  },
+  {
+    "start": 1940.0,
+    "end": 1942.0,
+    "text": " we were just telling them with type hinting"
+  },
+  {
+    "start": 1942.0,
+    "end": 1944.0,
+    "text": " that this will be an integer"
+  },
+  {
+    "start": 1944.0,
+    "end": 1946.0,
+    "text": " and the output of the function will also be an integer"
+  },
+  {
+    "start": 1946.0,
+    "end": 1948.0,
+    "text": " but this is a very loose method"
+  },
+  {
+    "start": 1948.0,
+    "end": 1950.0,
+    "text": " ok"
+  },
+  {
+    "start": 1950.0,
+    "end": 1952.0,
+    "text": " what you can do is"
+  },
+  {
+    "start": 1952.0,
+    "end": 1954.0,
+    "text": " you can enforce these constraints"
+  },
+  {
+    "start": 1954.0,
+    "end": 1956.0,
+    "text": " using something like"
+  },
+  {
+    "start": 1956.0,
+    "end": 1958.0,
+    "text": " a pidentic model"
+  },
+  {
+    "start": 1958.0,
+    "end": 1960.0,
+    "text": " which we have studied in the past in this playlist"
+  },
+  {
+    "start": 1960.0,
+    "end": 1962.0,
+    "text": " so the basic thing is"
+  },
+  {
+    "start": 1962.0,
+    "end": 1964.0,
+    "text": " you will create the function in the same way"
+  },
+  {
+    "start": 1964.0,
+    "end": 1966.0,
+    "text": " but you will enforce the type of"
+  },
+  {
+    "start": 1966.0,
+    "end": 1968.0,
+    "text": " arguments"
+  },
+  {
+    "start": 1968.0,
+    "end": 1970.0,
+    "text": " with the help of"
+  },
+  {
+    "start": 1970.0,
+    "end": 1972.0,
+    "text": " pidentic model"
+  },
+  {
+    "start": 1972.0,
+    "end": 1974.0,
+    "text": " again something which"
+  },
+  {
+    "start": 1974.0,
+    "end": 1976.0,
+    "text": " you will understand better after seeing the code"
+  },
+  {
+    "start": 1976.0,
+    "end": 1978.0,
+    "text": " so here is the code"
+  },
+  {
+    "start": 1978.0,
+    "end": 1980.0,
+    "text": " so first of all"
+  },
+  {
+    "start": 1980.0,
+    "end": 1982.0,
+    "text": " you have to import the structured tool class"
+  },
+  {
+    "start": 1982.0,
+    "end": 1984.0,
+    "text": " from the langchain.tools"
+  },
+  {
+    "start": 1984.0,
+    "end": 1986.0,
+    "text": " second"
+  },
+  {
+    "start": 1986.0,
+    "end": 1988.0,
+    "text": " you have to import the base model"
+  },
+  {
+    "start": 1988.0,
+    "end": 1990.0,
+    "text": " and field from pidentic"
+  },
+  {
+    "start": 1990.0,
+    "end": 1992.0,
+    "text": " now what you will do"
+  },
+  {
+    "start": 1992.0,
+    "end": 1994.0,
+    "text": " like before"
+  },
+  {
+    "start": 1994.0,
+    "end": 1996.0,
+    "text": " you will create the function"
+  },
+  {
+    "start": 1996.0,
+    "end": 1998.0,
+    "text": " ok your function name is multiply function"
+  },
+  {
+    "start": 1998.0,
+    "end": 2000.0,
+    "text": " and"
+  },
+  {
+    "start": 2000.0,
+    "end": 2002.0,
+    "text": " you have defined a and b"
+  },
+  {
+    "start": 2002.0,
+    "end": 2004.0,
+    "text": " if you want"
+  },
+  {
+    "start": 2004.0,
+    "end": 2006.0,
+    "text": " you can not define type hint here"
+  },
+  {
+    "start": 2006.0,
+    "end": 2008.0,
+    "text": " because what you have done"
+  },
+  {
+    "start": 2008.0,
+    "end": 2010.0,
+    "text": " here"
+  },
+  {
+    "start": 2010.0,
+    "end": 2012.0,
+    "text": " you have made a pidentic class"
+  },
+  {
+    "start": 2012.0,
+    "end": 2014.0,
+    "text": " which is inheriting from the base model"
+  },
+  {
+    "start": 2014.0,
+    "end": 2016.0,
+    "text": " obviously"
+  },
+  {
+    "start": 2016.0,
+    "end": 2018.0,
+    "text": " and here I have told you that"
+  },
+  {
+    "start": 2018.0,
+    "end": 2020.0,
+    "text": " in this pidentic class there are two attributes"
+  },
+  {
+    "start": 2020.0,
+    "end": 2022.0,
+    "text": " a and b"
+  },
+  {
+    "start": 2022.0,
+    "end": 2024.0,
+    "text": " which are both integer"
+  },
+  {
+    "start": 2024.0,
+    "end": 2026.0,
+    "text": " and then I have added extra description"
+  },
+  {
+    "start": 2026.0,
+    "end": 2028.0,
+    "text": " about these two fields"
+  },
+  {
+    "start": 2028.0,
+    "end": 2030.0,
+    "text": " so"
+  },
+  {
+    "start": 2030.0,
+    "end": 2032.0,
+    "text": " both are required true"
+  },
+  {
+    "start": 2032.0,
+    "end": 2034.0,
+    "text": " means both should be there"
+  },
+  {
+    "start": 2034.0,
+    "end": 2036.0,
+    "text": " and I have given the description of both"
+  },
+  {
+    "start": 2036.0,
+    "end": 2038.0,
+    "text": " so I will add second"
+  },
+  {
+    "start": 2038.0,
+    "end": 2040.0,
+    "text": " so this is my pidentic model"
+  },
+  {
+    "start": 2040.0,
+    "end": 2042.0,
+    "text": " this is my function"
+  },
+  {
+    "start": 2042.0,
+    "end": 2044.0,
+    "text": " now here the main work starts"
+  },
+  {
+    "start": 2044.0,
+    "end": 2046.0,
+    "text": " now what we will do is"
+  },
+  {
+    "start": 2046.0,
+    "end": 2048.0,
+    "text": " call structured tool.from function"
+  },
+  {
+    "start": 2048.0,
+    "end": 2050.0,
+    "text": " and here we will tell things"
+  },
+  {
+    "start": 2050.0,
+    "end": 2052.0,
+    "text": " first of all we will tell what is our function"
+  },
+  {
+    "start": 2052.0,
+    "end": 2054.0,
+    "text": " with the help of which we have to make the tool"
+  },
+  {
+    "start": 2054.0,
+    "end": 2056.0,
+    "text": " after that we will give a name to that function"
+  },
+  {
+    "start": 2056.0,
+    "end": 2058.0,
+    "text": " we will also give a description"
+  },
+  {
+    "start": 2058.0,
+    "end": 2060.0,
+    "text": " here"
+  },
+  {
+    "start": 2060.0,
+    "end": 2062.0,
+    "text": " ok and this is the most important step"
+  },
+  {
+    "start": 2062.0,
+    "end": 2064.0,
+    "text": " in argument schema"
+  },
+  {
+    "start": 2064.0,
+    "end": 2066.0,
+    "text": " we will multiply in the function"
+  },
+  {
+    "start": 2066.0,
+    "end": 2068.0,
+    "text": " the input which is our pidentic class"
+  },
+  {
+    "start": 2068.0,
+    "end": 2070.0,
+    "text": " we will provide that"
+  },
+  {
+    "start": 2070.0,
+    "end": 2072.0,
+    "text": " ok so here"
+  },
+  {
+    "start": 2072.0,
+    "end": 2074.0,
+    "text": " you can see that"
+  },
+  {
+    "start": 2074.0,
+    "end": 2076.0,
+    "text": " you are not doing all the work in a function"
+  },
+  {
+    "start": 2076.0,
+    "end": 2078.0,
+    "text": " you are doing all the work here"
+  },
+  {
+    "start": 2078.0,
+    "end": 2080.0,
+    "text": " ok here you are telling"
+  },
+  {
+    "start": 2080.0,
+    "end": 2082.0,
+    "text": " which function to use to make the tool"
+  },
+  {
+    "start": 2082.0,
+    "end": 2084.0,
+    "text": " you are giving a name to that tool"
+  },
+  {
+    "start": 2084.0,
+    "end": 2086.0,
+    "text": " you are giving a description to that tool"
+  },
+  {
+    "start": 2086.0,
+    "end": 2088.0,
+    "text": " and you are enforcing your argument schema separately"
+  },
+  {
+    "start": 2088.0,
+    "end": 2090.0,
+    "text": " using a pidentic model"
+  },
+  {
+    "start": 2090.0,
+    "end": 2092.0,
+    "text": " so this is"
+  },
+  {
+    "start": 2092.0,
+    "end": 2094.0,
+    "text": " a little more mature way"
+  },
+  {
+    "start": 2094.0,
+    "end": 2096.0,
+    "text": " if you are ready for production"
+  },
+  {
+    "start": 2096.0,
+    "end": 2098.0,
+    "text": " and you want to make agents"
+  },
+  {
+    "start": 2098.0,
+    "end": 2100.0,
+    "text": " then this method will help you more"
+  },
+  {
+    "start": 2100.0,
+    "end": 2102.0,
+    "text": " but again in most of the cases"
+  },
+  {
+    "start": 2102.0,
+    "end": 2104.0,
+    "text": " the decorator method"
+  },
+  {
+    "start": 2104.0,
+    "end": 2106.0,
+    "text": " is used and it will work"
+  },
+  {
+    "start": 2106.0,
+    "end": 2108.0,
+    "text": " ok"
+  },
+  {
+    "start": 2108.0,
+    "end": 2110.0,
+    "text": " so let's do one thing"
+  },
+  {
+    "start": 2110.0,
+    "end": 2112.0,
+    "text": " we will make this once"
+  },
+  {
+    "start": 2112.0,
+    "end": 2114.0,
+    "text": " and run it"
+  },
+  {
+    "start": 2114.0,
+    "end": 2116.0,
+    "text": " and here everything will work in the same way"
+  },
+  {
+    "start": 2116.0,
+    "end": 2118.0,
+    "text": " you can invoke this too"
+  },
+  {
+    "start": 2118.0,
+    "end": 2120.0,
+    "text": " and"
+  },
+  {
+    "start": 2120.0,
+    "end": 2122.0,
+    "text": " around this you will get description"
+  },
+  {
+    "start": 2122.0,
+    "end": 2124.0,
+    "text": " name etc"
+  },
+  {
+    "start": 2124.0,
+    "end": 2126.0,
+    "text": " ok here also you"
+  },
+  {
+    "start": 2126.0,
+    "end": 2128.0,
+    "text": " can see some additional things"
+  },
+  {
+    "start": 2128.0,
+    "end": 2130.0,
+    "text": " required true"
+  },
+  {
+    "start": 2130.0,
+    "end": 2132.0,
+    "text": " ok and"
+  },
+  {
+    "start": 2132.0,
+    "end": 2134.0,
+    "text": " its own description"
+  },
+  {
+    "start": 2134.0,
+    "end": 2136.0,
+    "text": " all this is coming from our pidentic model"
+  },
+  {
+    "start": 2136.0,
+    "end": 2138.0,
+    "text": " ok so I hope you understood"
+  },
+  {
+    "start": 2138.0,
+    "end": 2140.0,
+    "text": " there is not much difference"
+  },
+  {
+    "start": 2140.0,
+    "end": 2142.0,
+    "text": " the only difference is that"
+  },
+  {
+    "start": 2142.0,
+    "end": 2144.0,
+    "text": " you are using this class"
+  },
+  {
+    "start": 2144.0,
+    "end": 2146.0,
+    "text": " to make your tool"
+  },
+  {
+    "start": 2146.0,
+    "end": 2148.0,
+    "text": " and separately"
+  },
+  {
+    "start": 2148.0,
+    "end": 2150.0,
+    "text": " you are providing an input schema"
+  },
+  {
+    "start": 2150.0,
+    "end": 2152.0,
+    "text": " which is enforcing constraints"
+  },
+  {
+    "start": 2152.0,
+    "end": 2154.0,
+    "text": " in a strict way"
+  },
+  {
+    "start": 2154.0,
+    "end": 2156.0,
+    "text": " that's it that's the only difference"
+  },
+  {
+    "start": 2156.0,
+    "end": 2158.0,
+    "text": " now let's talk about the third method"
+  },
+  {
+    "start": 2158.0,
+    "end": 2160.0,
+    "text": " so the third method is"
+  },
+  {
+    "start": 2160.0,
+    "end": 2162.0,
+    "text": " to make your custom tool"
+  },
+  {
+    "start": 2162.0,
+    "end": 2164.0,
+    "text": " with the help of base tool class"
+  },
+  {
+    "start": 2164.0,
+    "end": 2166.0,
+    "text": " now to understand this first you should know"
+  },
+  {
+    "start": 2166.0,
+    "end": 2168.0,
+    "text": " what is base tool class"
+  },
+  {
+    "start": 2168.0,
+    "end": 2170.0,
+    "text": " so here it is written"
+  },
+  {
+    "start": 2170.0,
+    "end": 2172.0,
+    "text": " base tool is the abstract"
+  },
+  {
+    "start": 2172.0,
+    "end": 2174.0,
+    "text": " base class for all tools"
+  },
+  {
+    "start": 2174.0,
+    "end": 2176.0,
+    "text": " in land chain"
+  },
+  {
+    "start": 2176.0,
+    "end": 2178.0,
+    "text": " it defines the core structure"
+  },
+  {
+    "start": 2178.0,
+    "end": 2180.0,
+    "text": " and interface that"
+  },
+  {
+    "start": 2180.0,
+    "end": 2182.0,
+    "text": " any tool must follow"
+  },
+  {
+    "start": 2182.0,
+    "end": 2184.0,
+    "text": " whether it is a simple one liner"
+  },
+  {
+    "start": 2184.0,
+    "end": 2186.0,
+    "text": " or a fully customized function"
+  },
+  {
+    "start": 2186.0,
+    "end": 2188.0,
+    "text": " all other tool types"
+  },
+  {
+    "start": 2188.0,
+    "end": 2190.0,
+    "text": " like at the rate tool or structured tool"
+  },
+  {
+    "start": 2190.0,
+    "end": 2192.0,
+    "text": " are built on top of base tool"
+  },
+  {
+    "start": 2192.0,
+    "end": 2194.0,
+    "text": " ok"
+  },
+  {
+    "start": 2194.0,
+    "end": 2196.0,
+    "text": " so the basic thing is"
+  },
+  {
+    "start": 2196.0,
+    "end": 2198.0,
+    "text": " there is an abstract class in land chain"
+  },
+  {
+    "start": 2198.0,
+    "end": 2200.0,
+    "text": " which is called base tool"
+  },
+  {
+    "start": 2200.0,
+    "end": 2202.0,
+    "text": " now when you make any tool"
+  },
+  {
+    "start": 2202.0,
+    "end": 2204.0,
+    "text": " whether it is"
+  },
+  {
+    "start": 2204.0,
+    "end": 2206.0,
+    "text": " a built in tool"
+  },
+  {
+    "start": 2206.0,
+    "end": 2208.0,
+    "text": " all these tools"
+  },
+  {
+    "start": 2208.0,
+    "end": 2210.0,
+    "text": " have to be"
+  },
+  {
+    "start": 2210.0,
+    "end": 2212.0,
+    "text": " inherited by base tool class"
+  },
+  {
+    "start": 2212.0,
+    "end": 2214.0,
+    "text": " because in base tool class"
+  },
+  {
+    "start": 2214.0,
+    "end": 2216.0,
+    "text": " it is told that a tool"
+  },
+  {
+    "start": 2216.0,
+    "end": 2218.0,
+    "text": " will behave in the land chain"
+  },
+  {
+    "start": 2218.0,
+    "end": 2220.0,
+    "text": " so the tool you made"
+  },
+  {
+    "start": 2220.0,
+    "end": 2222.0,
+    "text": " with the help of at the rate tool decorator"
+  },
+  {
+    "start": 2222.0,
+    "end": 2224.0,
+    "text": " or the tool I just showed you"
+  },
+  {
+    "start": 2224.0,
+    "end": 2226.0,
+    "text": " with the help of structured tool"
+  },
+  {
+    "start": 2226.0,
+    "end": 2228.0,
+    "text": " all these tools"
+  },
+  {
+    "start": 2228.0,
+    "end": 2230.0,
+    "text": " by default"
+  },
+  {
+    "start": 2230.0,
+    "end": 2232.0,
+    "text": " inherit base tool class"
+  },
+  {
+    "start": 2232.0,
+    "end": 2234.0,
+    "text": " so now what we will do"
+  },
+  {
+    "start": 2234.0,
+    "end": 2236.0,
+    "text": " rather than using"
+  },
+  {
+    "start": 2236.0,
+    "end": 2238.0,
+    "text": " these methods"
+  },
+  {
+    "start": 2238.0,
+    "end": 2240.0,
+    "text": " we will inherit base tool class"
+  },
+  {
+    "start": 2240.0,
+    "end": 2242.0,
+    "text": " and make our own tool"
+  },
+  {
+    "start": 2242.0,
+    "end": 2244.0,
+    "text": " so let me show you the code"
+  },
+  {
+    "start": 2244.0,
+    "end": 2246.0,
+    "text": " so"
+  },
+  {
+    "start": 2246.0,
+    "end": 2248.0,
+    "text": " for this you have to"
+  },
+  {
+    "start": 2248.0,
+    "end": 2250.0,
+    "text": " import"
+  },
+  {
+    "start": 2250.0,
+    "end": 2252.0,
+    "text": " base tool from"
+  },
+  {
+    "start": 2252.0,
+    "end": 2254.0,
+    "text": " landchain.tools"
+  },
+  {
+    "start": 2254.0,
+    "end": 2256.0,
+    "text": " and type from typing"
+  },
+  {
+    "start": 2256.0,
+    "end": 2258.0,
+    "text": " again I told you about typing"
+  },
+  {
+    "start": 2258.0,
+    "end": 2260.0,
+    "text": " I remember in some video"
+  },
+  {
+    "start": 2260.0,
+    "end": 2262.0,
+    "text": " I told you about typing"
+  },
+  {
+    "start": 2262.0,
+    "end": 2264.0,
+    "text": " so"
+  },
+  {
+    "start": 2264.0,
+    "end": 2266.0,
+    "text": " first of all"
+  },
+  {
+    "start": 2266.0,
+    "end": 2268.0,
+    "text": " you have to make a class"
+  },
+  {
+    "start": 2268.0,
+    "end": 2270.0,
+    "text": " which is called"
+  },
+  {
+    "start": 2270.0,
+    "end": 2272.0,
+    "text": " multiply tool"
+  },
+  {
+    "start": 2272.0,
+    "end": 2274.0,
+    "text": " and the special thing is"
+  },
+  {
+    "start": 2274.0,
+    "end": 2276.0,
+    "text": " this multiply tool class"
+  },
+  {
+    "start": 2276.0,
+    "end": 2278.0,
+    "text": " is inheriting base tool class"
+  },
+  {
+    "start": 2278.0,
+    "end": 2280.0,
+    "text": " means our class is"
+  },
+  {
+    "start": 2280.0,
+    "end": 2282.0,
+    "text": " the child of base tool class"
+  },
+  {
+    "start": 2282.0,
+    "end": 2284.0,
+    "text": " now what you can do here"
+  },
+  {
+    "start": 2284.0,
+    "end": 2286.0,
+    "text": " you can define your own attributes"
+  },
+  {
+    "start": 2286.0,
+    "end": 2288.0,
+    "text": " you can define your own functions"
+  },
+  {
+    "start": 2288.0,
+    "end": 2290.0,
+    "text": " so the first function is"
+  },
+  {
+    "start": 2290.0,
+    "end": 2292.0,
+    "text": " name"
+  },
+  {
+    "start": 2292.0,
+    "end": 2294.0,
+    "text": " no function I am sorry"
+  },
+  {
+    "start": 2294.0,
+    "end": 2296.0,
+    "text": " attribute is name"
+  },
+  {
+    "start": 2296.0,
+    "end": 2298.0,
+    "text": " where you name your tool"
+  },
+  {
+    "start": 2298.0,
+    "end": 2300.0,
+    "text": " second is description"
+  },
+  {
+    "start": 2300.0,
+    "end": 2302.0,
+    "text": " where you describe what your tool does"
+  },
+  {
+    "start": 2302.0,
+    "end": 2304.0,
+    "text": " after that"
+  },
+  {
+    "start": 2304.0,
+    "end": 2306.0,
+    "text": " here you can send your argument schema"
+  },
+  {
+    "start": 2306.0,
+    "end": 2308.0,
+    "text": " so what we have done here"
+  },
+  {
+    "start": 2308.0,
+    "end": 2310.0,
+    "text": " we have defined a separate"
+  },
+  {
+    "start": 2310.0,
+    "end": 2312.0,
+    "text": " argument schema using"
+  },
+  {
+    "start": 2312.0,
+    "end": 2314.0,
+    "text": " pydantic"
+  },
+  {
+    "start": 2314.0,
+    "end": 2316.0,
+    "text": " like we did in the above one"
+  },
+  {
+    "start": 2316.0,
+    "end": 2318.0,
+    "text": " see this is same thing"
+  },
+  {
+    "start": 2318.0,
+    "end": 2320.0,
+    "text": " so here we have made the same schema"
+  },
+  {
+    "start": 2320.0,
+    "end": 2322.0,
+    "text": " we have defined same schema here"
+  },
+  {
+    "start": 2322.0,
+    "end": 2324.0,
+    "text": " that our tool"
+  },
+  {
+    "start": 2324.0,
+    "end": 2326.0,
+    "text": " will get two things in input"
+  },
+  {
+    "start": 2326.0,
+    "end": 2328.0,
+    "text": " a and b both integers"
+  },
+  {
+    "start": 2328.0,
+    "end": 2330.0,
+    "text": " and description"
+  },
+  {
+    "start": 2330.0,
+    "end": 2332.0,
+    "text": " so now what I am doing here"
+  },
+  {
+    "start": 2332.0,
+    "end": 2334.0,
+    "text": " in my multiply tool class"
+  },
+  {
+    "start": 2334.0,
+    "end": 2336.0,
+    "text": " is this multiply input"
+  },
+  {
+    "start": 2336.0,
+    "end": 2338.0,
+    "text": " which I have defined above"
+  },
+  {
+    "start": 2338.0,
+    "end": 2340.0,
+    "text": " and type is"
+  },
+  {
+    "start": 2340.0,
+    "end": 2342.0,
+    "text": " this multiply input"
+  },
+  {
+    "start": 2342.0,
+    "end": 2344.0,
+    "text": " pydantic schema"
+  },
+  {
+    "start": 2344.0,
+    "end": 2346.0,
+    "text": " its type is base model"
+  },
+  {
+    "start": 2346.0,
+    "end": 2348.0,
+    "text": " basically it is a pydantic schema"
+  },
+  {
+    "start": 2348.0,
+    "end": 2350.0,
+    "text": " now here you define"
+  },
+  {
+    "start": 2350.0,
+    "end": 2352.0,
+    "text": " your most important"
+  },
+  {
+    "start": 2352.0,
+    "end": 2354.0,
+    "text": " run method"
+  },
+  {
+    "start": 2354.0,
+    "end": 2356.0,
+    "text": " under root"
+  },
+  {
+    "start": 2356.0,
+    "end": 2358.0,
+    "text": " run method"
+  },
+  {
+    "start": 2358.0,
+    "end": 2360.0,
+    "text": " its name should be exactly this"
+  },
+  {
+    "start": 2360.0,
+    "end": 2362.0,
+    "text": " you can't write anything else"
+  },
+  {
+    "start": 2362.0,
+    "end": 2364.0,
+    "text": " so here you have told"
+  },
+  {
+    "start": 2364.0,
+    "end": 2366.0,
+    "text": " that you will get"
+  },
+  {
+    "start": 2366.0,
+    "end": 2368.0,
+    "text": " a and b"
+  },
+  {
+    "start": 2368.0,
+    "end": 2370.0,
+    "text": " and that's it guys"
+  },
+  {
+    "start": 2370.0,
+    "end": 2372.0,
+    "text": " this class you have made"
+  },
+  {
+    "start": 2372.0,
+    "end": 2374.0,
+    "text": " is now inheriting base tool class"
+  },
+  {
+    "start": 2374.0,
+    "end": 2376.0,
+    "text": " and hence this class"
+  },
+  {
+    "start": 2376.0,
+    "end": 2378.0,
+    "text": " also becomes a tool in lang chain"
+  },
+  {
+    "start": 2378.0,
+    "end": 2380.0,
+    "text": " now you make"
+  },
+  {
+    "start": 2380.0,
+    "end": 2382.0,
+    "text": " its object"
+  },
+  {
+    "start": 2382.0,
+    "end": 2384.0,
+    "text": " like we have made object"
+  },
+  {
+    "start": 2384.0,
+    "end": 2386.0,
+    "text": " and once you have object"
+  },
+  {
+    "start": 2386.0,
+    "end": 2388.0,
+    "text": " then you will call dot invoke"
+  },
+  {
+    "start": 2388.0,
+    "end": 2390.0,
+    "text": " and pass input"
+  },
+  {
+    "start": 2390.0,
+    "end": 2392.0,
+    "text": " and you will get the answer"
+  },
+  {
+    "start": 2392.0,
+    "end": 2394.0,
+    "text": " and like earlier"
+  },
+  {
+    "start": 2394.0,
+    "end": 2396.0,
+    "text": " you can print name description"
+  },
+  {
+    "start": 2396.0,
+    "end": 2398.0,
+    "text": " and arguments"
+  },
+  {
+    "start": 2398.0,
+    "end": 2400.0,
+    "text": " in the same way"
+  },
+  {
+    "start": 2400.0,
+    "end": 2402.0,
+    "text": " this method"
+  },
+  {
+    "start": 2402.0,
+    "end": 2404.0,
+    "text": " gives you many benefits"
+  },
+  {
+    "start": 2404.0,
+    "end": 2406.0,
+    "text": " you can do"
+  },
+  {
+    "start": 2406.0,
+    "end": 2408.0,
+    "text": " many deep level customizations"
+  },
+  {
+    "start": 2408.0,
+    "end": 2410.0,
+    "text": " here in fact"
+  },
+  {
+    "start": 2410.0,
+    "end": 2412.0,
+    "text": " you can create"
+  },
+  {
+    "start": 2412.0,
+    "end": 2414.0,
+    "text": " an async version of your tool"
+  },
+  {
+    "start": 2414.0,
+    "end": 2416.0,
+    "text": " you don't get that feature"
+  },
+  {
+    "start": 2416.0,
+    "end": 2418.0,
+    "text": " in tool decorator"
+  },
+  {
+    "start": 2418.0,
+    "end": 2420.0,
+    "text": " and also not in structure tool"
+  },
+  {
+    "start": 2420.0,
+    "end": 2422.0,
+    "text": " but here you can create"
+  },
+  {
+    "start": 2422.0,
+    "end": 2424.0,
+    "text": " an async version of your tool"
+  },
+  {
+    "start": 2424.0,
+    "end": 2426.0,
+    "text": " if you are making any application"
+  },
+  {
+    "start": 2426.0,
+    "end": 2428.0,
+    "text": " where you have to handle concurrency"
+  },
+  {
+    "start": 2428.0,
+    "end": 2430.0,
+    "text": " then you will use this particular method"
+  },
+  {
+    "start": 2430.0,
+    "end": 2432.0,
+    "text": " but again in my experience"
+  },
+  {
+    "start": 2432.0,
+    "end": 2434.0,
+    "text": " to experiment at basic level"
+  },
+  {
+    "start": 2434.0,
+    "end": 2436.0,
+    "text": " at the rate tool decorator is sufficient"
+  },
+  {
+    "start": 2436.0,
+    "end": 2438.0,
+    "text": " and"
+  },
+  {
+    "start": 2438.0,
+    "end": 2440.0,
+    "text": " in 80-90% scenarios"
+  },
+  {
+    "start": 2440.0,
+    "end": 2442.0,
+    "text": " the first method"
+  },
+  {
+    "start": 2442.0,
+    "end": 2444.0,
+    "text": " with its help"
+  },
+  {
+    "start": 2444.0,
+    "end": 2446.0,
+    "text": " you will make tool and get your work done"
+  },
+  {
+    "start": 2446.0,
+    "end": 2448.0,
+    "text": " there will be certain scenarios"
+  },
+  {
+    "start": 2448.0,
+    "end": 2450.0,
+    "text": " where you are working on production ready application"
+  },
+  {
+    "start": 2450.0,
+    "end": 2452.0,
+    "text": " or production level application"
+  },
+  {
+    "start": 2452.0,
+    "end": 2454.0,
+    "text": " so there you will have"
+  },
+  {
+    "start": 2454.0,
+    "end": 2456.0,
+    "text": " the opportunity to use other methods"
+  },
+  {
+    "start": 2456.0,
+    "end": 2458.0,
+    "text": " that is why I have told you both"
+  },
+  {
+    "start": 2458.0,
+    "end": 2460.0,
+    "text": " again you can go to"
+  },
+  {
+    "start": 2460.0,
+    "end": 2462.0,
+    "text": " planchain documentation"
+  },
+  {
+    "start": 2462.0,
+    "end": 2464.0,
+    "text": " and explore things"
+  },
+  {
+    "start": 2464.0,
+    "end": 2466.0,
+    "text": " so in this video we have learned about tools"
+  },
+  {
+    "start": 2466.0,
+    "end": 2468.0,
+    "text": " we have learned about built in tools"
+  },
+  {
+    "start": 2468.0,
+    "end": 2470.0,
+    "text": " we have learnt how to make our own tools"
+  },
+  {
+    "start": 2470.0,
+    "end": 2472.0,
+    "text": " and we have seen 3 different ways"
+  },
+  {
+    "start": 2472.0,
+    "end": 2474.0,
+    "text": " to make our own tools"
+  },
+  {
+    "start": 2474.0,
+    "end": 2476.0,
+    "text": " now I want to cover one last topic"
+  },
+  {
+    "start": 2476.0,
+    "end": 2478.0,
+    "text": " and that is tool kits"
+  },
+  {
+    "start": 2478.0,
+    "end": 2480.0,
+    "text": " ok"
+  },
+  {
+    "start": 2480.0,
+    "end": 2482.0,
+    "text": " so what is the funda of tool kit"
+  },
+  {
+    "start": 2482.0,
+    "end": 2484.0,
+    "text": " so if you are making multiple tools"
+  },
+  {
+    "start": 2484.0,
+    "end": 2486.0,
+    "text": " for your application"
+  },
+  {
+    "start": 2486.0,
+    "end": 2488.0,
+    "text": " and those tools"
+  },
+  {
+    "start": 2488.0,
+    "end": 2490.0,
+    "text": " are related to each other"
+  },
+  {
+    "start": 2490.0,
+    "end": 2492.0,
+    "text": " so you can club those tools"
+  },
+  {
+    "start": 2492.0,
+    "end": 2494.0,
+    "text": " and form a tool kit"
+  },
+  {
+    "start": 2494.0,
+    "end": 2496.0,
+    "text": " ok"
+  },
+  {
+    "start": 2496.0,
+    "end": 2498.0,
+    "text": " like suppose"
+  },
+  {
+    "start": 2498.0,
+    "end": 2500.0,
+    "text": " you are making multiple tools related to google drive"
+  },
+  {
+    "start": 2500.0,
+    "end": 2502.0,
+    "text": " one is"
+  },
+  {
+    "start": 2502.0,
+    "end": 2504.0,
+    "text": " to upload files on google drive"
+  },
+  {
+    "start": 2504.0,
+    "end": 2506.0,
+    "text": " another is"
+  },
+  {
+    "start": 2506.0,
+    "end": 2508.0,
+    "text": " to search files on google drive"
+  },
+  {
+    "start": 2508.0,
+    "end": 2510.0,
+    "text": " another is"
+  },
+  {
+    "start": 2510.0,
+    "end": 2512.0,
+    "text": " to read files on google drive"
+  },
+  {
+    "start": 2512.0,
+    "end": 2514.0,
+    "text": " now all these tools"
+  },
+  {
+    "start": 2514.0,
+    "end": 2516.0,
+    "text": " are related to google drive"
+  },
+  {
+    "start": 2516.0,
+    "end": 2518.0,
+    "text": " so what you can do is"
+  },
+  {
+    "start": 2518.0,
+    "end": 2520.0,
+    "text": " by clubbing all these tools"
+  },
+  {
+    "start": 2520.0,
+    "end": 2522.0,
+    "text": " you can form a tool kit"
+  },
+  {
+    "start": 2522.0,
+    "end": 2524.0,
+    "text": " called google drive tool kit"
+  },
+  {
+    "start": 2524.0,
+    "end": 2526.0,
+    "text": " ok so this concept exists in langchain"
+  },
+  {
+    "start": 2526.0,
+    "end": 2528.0,
+    "text": " you will also get built in tool kits"
+  },
+  {
+    "start": 2528.0,
+    "end": 2530.0,
+    "text": " in langchain"
+  },
+  {
+    "start": 2530.0,
+    "end": 2532.0,
+    "text": " and if you want"
+  },
+  {
+    "start": 2532.0,
+    "end": 2534.0,
+    "text": " you can make your own custom tool kits"
+  },
+  {
+    "start": 2534.0,
+    "end": 2536.0,
+    "text": " see here let us read the definition"
+  },
+  {
+    "start": 2536.0,
+    "end": 2538.0,
+    "text": " a tool kit is just a collection"
+  },
+  {
+    "start": 2538.0,
+    "end": 2540.0,
+    "text": " of related tools"
+  },
+  {
+    "start": 2540.0,
+    "end": 2542.0,
+    "text": " that serve a common purpose"
+  },
+  {
+    "start": 2542.0,
+    "end": 2544.0,
+    "text": " packaged together"
+  },
+  {
+    "start": 2544.0,
+    "end": 2546.0,
+    "text": " for convenience and reusability"
+  },
+  {
+    "start": 2546.0,
+    "end": 2548.0,
+    "text": " so the biggest benefit"
+  },
+  {
+    "start": 2548.0,
+    "end": 2550.0,
+    "text": " of making tool kits is reusability"
+  },
+  {
+    "start": 2550.0,
+    "end": 2552.0,
+    "text": " you have made"
+  },
+  {
+    "start": 2552.0,
+    "end": 2554.0,
+    "text": " tool kit and kept it"
+  },
+  {
+    "start": 2554.0,
+    "end": 2556.0,
+    "text": " you can use it in one application"
+  },
+  {
+    "start": 2556.0,
+    "end": 2558.0,
+    "text": " or in any other application"
+  },
+  {
+    "start": 2558.0,
+    "end": 2560.0,
+    "text": " so that is the main funda"
+  },
+  {
+    "start": 2560.0,
+    "end": 2562.0,
+    "text": " behind creating tool kits"
+  },
+  {
+    "start": 2562.0,
+    "end": 2564.0,
+    "text": " ok so i will show you"
+  },
+  {
+    "start": 2564.0,
+    "end": 2566.0,
+    "text": " a custom tool kit"
+  },
+  {
+    "start": 2566.0,
+    "end": 2568.0,
+    "text": " with the help of langchain"
+  },
+  {
+    "start": 2568.0,
+    "end": 2570.0,
+    "text": " first of all"
+  },
+  {
+    "start": 2570.0,
+    "end": 2572.0,
+    "text": " what you have to do is"
+  },
+  {
+    "start": 2572.0,
+    "end": 2574.0,
+    "text": " you have to make 2 or more tools"
+  },
+  {
+    "start": 2574.0,
+    "end": 2576.0,
+    "text": " which are related"
+  },
+  {
+    "start": 2576.0,
+    "end": 2578.0,
+    "text": " like what we are doing"
+  },
+  {
+    "start": 2578.0,
+    "end": 2580.0,
+    "text": " we are making 2 tools"
+  },
+  {
+    "start": 2580.0,
+    "end": 2582.0,
+    "text": " one is to add"
+  },
+  {
+    "start": 2582.0,
+    "end": 2584.0,
+    "text": " and the other is to multiply"
+  },
+  {
+    "start": 2584.0,
+    "end": 2586.0,
+    "text": " and both these tools are related"
+  },
+  {
+    "start": 2586.0,
+    "end": 2588.0,
+    "text": " because both are doing arithmetic operations"
+  },
+  {
+    "start": 2588.0,
+    "end": 2590.0,
+    "text": " ok and to make these tools"
+  },
+  {
+    "start": 2590.0,
+    "end": 2592.0,
+    "text": " we are using tool decorator method"
+  },
+  {
+    "start": 2592.0,
+    "end": 2594.0,
+    "text": " you can use other method also"
+  },
+  {
+    "start": 2594.0,
+    "end": 2596.0,
+    "text": " now here the main work starts"
+  },
+  {
+    "start": 2596.0,
+    "end": 2598.0,
+    "text": " whatever tool kit you want to make"
+  },
+  {
+    "start": 2598.0,
+    "end": 2600.0,
+    "text": " you can make a custom tool kit"
+  },
+  {
+    "start": 2600.0,
+    "end": 2602.0,
+    "text": " you make a class for it"
+  },
+  {
+    "start": 2602.0,
+    "end": 2604.0,
+    "text": " so we made a class"
+  },
+  {
+    "start": 2604.0,
+    "end": 2606.0,
+    "text": " and the name of the class"
+  },
+  {
+    "start": 2606.0,
+    "end": 2608.0,
+    "text": " we kept the same name of the tool kit"
+  },
+  {
+    "start": 2608.0,
+    "end": 2610.0,
+    "text": " so our tool kit name is"
+  },
+  {
+    "start": 2610.0,
+    "end": 2612.0,
+    "text": " math tool kit"
+  },
+  {
+    "start": 2612.0,
+    "end": 2614.0,
+    "text": " now what you have to do is"
+  },
+  {
+    "start": 2614.0,
+    "end": 2616.0,
+    "text": " define a method"
+  },
+  {
+    "start": 2616.0,
+    "end": 2618.0,
+    "text": " by saying get tools"
+  },
+  {
+    "start": 2618.0,
+    "end": 2620.0,
+    "text": " and here what you will do is"
+  },
+  {
+    "start": 2620.0,
+    "end": 2622.0,
+    "text": " you will return"
+  },
+  {
+    "start": 2622.0,
+    "end": 2624.0,
+    "text": " the name of the tools"
+  },
+  {
+    "start": 2624.0,
+    "end": 2626.0,
+    "text": " which you want to be part of this tool kit"
+  },
+  {
+    "start": 2626.0,
+    "end": 2628.0,
+    "text": " so i have made add and multiply"
+  },
+  {
+    "start": 2628.0,
+    "end": 2630.0,
+    "text": " part of this tool kit"
+  },
+  {
+    "start": 2630.0,
+    "end": 2632.0,
+    "text": " now what you can do is"
+  },
+  {
+    "start": 2632.0,
+    "end": 2634.0,
+    "text": " you can easily make"
+  },
+  {
+    "start": 2634.0,
+    "end": 2636.0,
+    "text": " the object of your tool kit"
+  },
+  {
+    "start": 2636.0,
+    "end": 2638.0,
+    "text": " and when you will do"
+  },
+  {
+    "start": 2638.0,
+    "end": 2640.0,
+    "text": " toolkit.get tools"
+  },
+  {
+    "start": 2640.0,
+    "end": 2642.0,
+    "text": " then you will get all the tools"
+  },
+  {
+    "start": 2642.0,
+    "end": 2644.0,
+    "text": " which exist in your tool kit"
+  },
+  {
+    "start": 2644.0,
+    "end": 2646.0,
+    "text": " now what you can do is"
+  },
+  {
+    "start": 2646.0,
+    "end": 2648.0,
+    "text": " by running a loop"
+  },
+  {
+    "start": 2648.0,
+    "end": 2650.0,
+    "text": " you can access all these tools"
+  },
+  {
+    "start": 2650.0,
+    "end": 2652.0,
+    "text": " you can run them"
+  },
+  {
+    "start": 2652.0,
+    "end": 2654.0,
+    "text": " you can check their name, description, args"
+  },
+  {
+    "start": 2654.0,
+    "end": 2656.0,
+    "text": " so this is the main benefit"
+  },
+  {
+    "start": 2656.0,
+    "end": 2658.0,
+    "text": " of using tool kit"
+  },
+  {
+    "start": 2658.0,
+    "end": 2660.0,
+    "text": " that you can access all of them"
+  },
+  {
+    "start": 2660.0,
+    "end": 2662.0,
+    "text": " and also"
+  },
+  {
+    "start": 2662.0,
+    "end": 2664.0,
+    "text": " you have the point of view of reusability"
+  },
+  {
+    "start": 2664.0,
+    "end": 2666.0,
+    "text": " so this was a very small concept"
+  },
+  {
+    "start": 2666.0,
+    "end": 2668.0,
+    "text": " but"
+  },
+  {
+    "start": 2668.0,
+    "end": 2670.0,
+    "text": " i thought i should cover it"
+  },
+  {
+    "start": 2670.0,
+    "end": 2672.0,
+    "text": " so yeah"
+  },
+  {
+    "start": 2672.0,
+    "end": 2674.0,
+    "text": " that's it for the video guys"
+  },
+  {
+    "start": 2674.0,
+    "end": 2676.0,
+    "text": " i know you might be feeling"
+  },
+  {
+    "start": 2676.0,
+    "end": 2678.0,
+    "text": " incomplete"
+  },
+  {
+    "start": 2678.0,
+    "end": 2680.0,
+    "text": " that we have learnt how to make tools"
+  },
+  {
+    "start": 2680.0,
+    "end": 2682.0,
+    "text": " but we have not learnt"
+  },
+  {
+    "start": 2682.0,
+    "end": 2684.0,
+    "text": " how to connect with LLM"
+  },
+  {
+    "start": 2684.0,
+    "end": 2686.0,
+    "text": " the reason for that is"
+  },
+  {
+    "start": 2686.0,
+    "end": 2688.0,
+    "text": " we will cover this topic in next video"
+  },
+  {
+    "start": 2688.0,
+    "end": 2690.0,
+    "text": " when i will teach you tool calling"
+  },
+  {
+    "start": 2690.0,
+    "end": 2692.0,
+    "text": " so today's video's main"
+  },
+  {
+    "start": 2692.0,
+    "end": 2694.0,
+    "text": " point was to teach you about tools"
+  },
+  {
+    "start": 2694.0,
+    "end": 2696.0,
+    "text": " i really hope i could teach you"
+  },
+  {
+    "start": 2696.0,
+    "end": 2698.0,
+    "text": " everything is clear around tools"
+  },
+  {
+    "start": 2698.0,
+    "end": 2700.0,
+    "text": " now next video"
+  },
+  {
+    "start": 2700.0,
+    "end": 2702.0,
+    "text": " in fact next and next video"
+  },
+  {
+    "start": 2702.0,
+    "end": 2704.0,
+    "text": " both are very interesting because"
+  },
+  {
+    "start": 2704.0,
+    "end": 2706.0,
+    "text": " in next videos we will use these tools"
+  },
+  {
+    "start": 2706.0,
+    "end": 2708.0,
+    "text": " with LLMs"
+  },
+  {
+    "start": 2708.0,
+    "end": 2710.0,
+    "text": " so if you liked this video"
+  },
+  {
+    "start": 2710.0,
+    "end": 2712.0,
+    "text": " please like it and if you have not subscribed"
+  },
+  {
+    "start": 2712.0,
+    "end": 2714.0,
+    "text": " to this channel please do subscribe"
+  },
+  {
+    "start": 2714.0,
+    "end": 2716.0,
+    "text": " see you in next video bye"
+  }
+]
