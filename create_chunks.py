@@ -24,6 +24,14 @@ for audio in audios:
             number = parts[0]  # First part is the number (0, 1, 2, etc.)
             title = parts[1].replace(".mp3", "")  # Everything after first underscore, remove extension
             
+            # Create filename in format: number_title.json
+            output_filename = f"jsons/{number}_{title}.json"
+            
+            # Check if JSON file already exists
+            if os.path.exists(output_filename):
+                print(f"Skipping {audio} - JSON file already exists: {output_filename}")
+                continue
+            
             print(f"Processing: {audio}")
             print(f"Number: {number}, Title: {title}")
             
@@ -44,8 +52,6 @@ for audio in audios:
             
             chunks_with_metadata = {"chunks": chunks, "text": result["text"]}
 
-            # Create filename in format: number_title.json
-            output_filename = f"jsons/{number}_{title}.json"
             with open(output_filename, "w", encoding="utf-8") as f:
                 json.dump(chunks_with_metadata, f, ensure_ascii=False, indent=2)
                 
