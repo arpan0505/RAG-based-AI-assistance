@@ -19,16 +19,10 @@ if not os.path.exists("jsons"):
 for audio in audios: 
     if audio.endswith('.mp3') and "_" in audio:
         try:
-            # Extract number and title based on different formats
-            if "Video " in audio:
-                # Format: "1_Introduction_to_LangChain__LangChain_for_Beginners__Video_1__CampusX.mp4.mp3"
-                number = audio.split('Video ')[1].split('_')[0]
-                title = audio.split("_")[1]
-            else:
-                # Format: "10_Document_Loaders_in_LangChain.mp3"
-                parts = audio.split("_")
-                number = parts[0]  # First part is the number
-                title = "_".join(parts[1:]).replace(".mp3", "")  # Join remaining parts and remove extension
+            # Since all files now follow the format: "number_title.mp3"
+            parts = audio.split("_", 1)  # Split only on first underscore
+            number = parts[0]  # First part is the number (0, 1, 2, etc.)
+            title = parts[1].replace(".mp3", "")  # Everything after first underscore, remove extension
             
             print(f"Processing: {audio}")
             print(f"Number: {number}, Title: {title}")
