@@ -13,6 +13,17 @@ def create_embeddings(text_list):
     embeddings = r.json()['embeddings']
     return embeddings
 
+def inference(prompt):
+    r = requests.post("http://localhost:11434/api/generate", json={
+    "model":"llama3.1", 
+    "prompt": prompt,
+    "stream": False
+})
+    
+    response = r.json()
+    print(response)
+    return response
+
 df = joblib.load("embedding.joblib")
 
 
@@ -28,7 +39,7 @@ new_df = df.loc[max_index.flatten()]
 
 prompt = f'''I am teaching SQL using a structured SQL course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, and the text at that time:
 
-{new_df[["title", "number", "start", "end", "text"]].to_json()}
+{new_df[["title", "number", "start", "end", "text"]].to_json(orient="records")}
 
 -----------------------------------------------------------------------
 
@@ -41,6 +52,11 @@ If the user’s question is unrelated to the SQL course content, politely respon
 with open("prompt.txt", "w", encoding="utf-8") as f:
     f.write(prompt)
 
+responce = inference(prompt)["response"]
+print(responce)
+
+with open("responce.txt", "w", encoding="utf-8") as f:
+    f.write(responce)
 # for index, item in new_df.iterrows():
 #     print(index, item['title'], item['number']  , item['text'], item['start'], item['end'])
    
