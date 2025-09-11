@@ -4,6 +4,7 @@ import ffmpeg
 import whisper
 import chromadb
 from chromadb.utils import embedding_functions
+import datetime
 
 # --- Configuration ---
 VIDEO_DIR = "videos"
@@ -11,8 +12,6 @@ AUDIO_DIR = "audios"
 JSON_DIR = "jsons"
 CHROMA_DB_PATH = "chroma_db"
 COLLECTION_NAME = "video_transcripts"
-CHUNK_SIZE = 500  # The target size of each text chunk in characters
-CHUNK_OVERLAP = 100  # The number of characters to overlap between chunks
 
 # --- Ensure Directories Exist ---
 os.makedirs(AUDIO_DIR, exist_ok=True)
@@ -26,11 +25,10 @@ embedding_function = embedding_functions.DefaultEmbeddingFunction()
 collection = client.get_or_create_collection(
     name=COLLECTION_NAME,
     embedding_function=embedding_function,
-    metadata={"hnsw:space": "cosine"} 
+    metadata={"hnsw:space": "cosine"}
 )
 
 # --- Load Whisper Model ---
-# Using the 'base' model which is small and efficient.
 print("Loading Whisper model...")
 whisper_model = whisper.load_model("base")
 print("Whisper model loaded.")
@@ -52,23 +50,36 @@ def extract_audio(video_path, audio_path):
         print(f"Error extracting audio from {video_path}: {e.stderr.decode()}")
         return False
 
-def create_text_chunks(text):
-    """Splits a long text into smaller, overlapping chunks."""
+def format_timestamp(seconds):
+    """Formats time in seconds to H:M:S format."""
+    return str(datetime.timedelta(seconds=int(seconds)))
+
+def create_chunks_from_transcript(transcript_result, video_filename):
+    """Creates chunks from the transcript result and includes metadata."""
     chunks = []
-    start = 0
-    while start < len(text):
-        end = start + CHUNK_SIZE
-        chunk = text[start:end]
-        chunks.append(chunk)
-        start += CHUNK_SIZE - CHUNK_OVERLAP
-    return chunks
+    metadatas = []
+    for segment in transcript_result['segments']:
+        start_time = segment['start']
+        end_time = segment['end']
+        text = segment['text']
+
+        metadata = {
+            "source": video_filename,
+            "start_time": format_timestamp(start_time),
+            "end_time": format_timestamp(end_time),
+            "start_seconds": round(start_time, 2),
+            "end_seconds": round(end_time, 2)
+        }
+        chunks.append(text)
+        metadatas.append(metadata)
+    return chunks, metadatas
 
 def process_video(video_path):
     """
     Full processing pipeline for a single video.
     1. Extracts audio.
     2. Transcribes audio to text using Whisper.
-    3. Chunks the text.
+    3. Chunks the text based on segments.
     4. Generates embeddings and stores them in ChromaDB.
     """
     video_filename = os.path.basename(video_path)
@@ -78,59 +89,89 @@ def process_video(video_path):
     json_filename = f"{base_name}.json"
     json_path = os.path.join(JSON_DIR, json_filename)
 
+    # Skip if JSON already exists, assuming it's been processed
+    if os.path.exists(json_path):
+        print(f"Skipping already processed video: {video_filename}")
+        return None, None, None
+
     print(f"Processing video: {video_filename}")
 
     # 1. Extract Audio
     if not extract_audio(video_path, audio_path):
-        return
+        return None, None, None
 
     # 2. Transcribe Audio with Whisper
     print(f"  Transcribing audio with Whisper...")
     try:
-        # Set fp16=False if you are running on CPU
         result = whisper_model.transcribe(audio_path, fp16=False)
-        transcript = result['text']
     except Exception as e:
         print(f"  Error during transcription: {e}")
-        return
-    
-    # Save transcript to a JSON file
+        return None, None, None
+
+    # Save full transcript result to a JSON file
     with open(json_path, 'w') as f:
-        json.dump({'transcript': transcript}, f, indent=4)
-    
+        json.dump(result, f, indent=4)
     print(f"  Transcript saved to {json_path}")
 
-    # 3. Create Text Chunks
-    chunks = create_text_chunks(transcript)
-    print(f"  Created {len(chunks)} text chunks.")
+    # 3. Create Chunks from Transcript
+    chunks, metadatas = create_chunks_from_transcript(result, video_filename)
+    print(f"  Created {len(chunks)} text chunks from segments.")
 
-    # 4. Generate Embeddings and Store in ChromaDB
-    if chunks:
-        # Check if documents already exist to avoid duplicates
-        existing_ids = collection.get(where={"source": video_filename}).get('ids', [])
-        if existing_ids:
-            print(f"  Documents for {video_filename} already exist in ChromaDB. Skipping addition.")
-            return
+    if not chunks:
+        return None, None, None
 
-        chunk_ids = [f"{base_name}_{i}" for i in range(len(chunks))]
-        metadatas = [{"source": video_filename, "chunk_index": i} for i in range(len(chunks))]
-        
-        collection.add(
-            documents=chunks,
-            metadatas=metadatas,
-            ids=chunk_ids
-        )
-        print(f"  Added {len(chunks)} chunks to ChromaDB.")
+    chunk_ids = [f"{base_name}_{i}" for i in range(len(chunks))]
+
+    return chunks, metadatas, chunk_ids
+
 
 # --- Main Execution ---
 if __name__ == "__main__":
     print("Starting the ingestion process...")
-    
+
     video_files = [f for f in os.listdir(VIDEO_DIR) if f.endswith(('.mp4', '.mov', '.avi', '.mkv'))]
-    
+
+    all_chunks = []
+    all_metadatas = []
+    all_ids = []
+
     for video_file in video_files:
         video_path = os.path.join(VIDEO_DIR, video_file)
-        process_video(video_path)
-        
+        chunks, metadatas, ids = process_video(video_path)
+        if chunks:
+            all_chunks.extend(chunks)
+            all_metadatas.extend(metadatas)
+            all_ids.extend(ids)
+
+    if all_chunks:
+        # Check for existing IDs to avoid duplicates before adding
+        existing_ids = collection.get(ids=all_ids).get('ids', [])
+        if existing_ids:
+            print(f"\nFound {len(existing_ids)} existing documents in ChromaDB. Filtering them out.")
+            # Filter out chunks that are already in the database
+            new_chunks = []
+            new_metadatas = []
+            new_ids = []
+            for i, chunk_id in enumerate(all_ids):
+                if chunk_id not in existing_ids:
+                    new_chunks.append(all_chunks[i])
+                    new_metadatas.append(all_metadatas[i])
+                    new_ids.append(chunk_id)
+            
+            all_chunks = new_chunks
+            all_metadatas = new_metadatas
+            all_ids = new_ids
+
+    if all_chunks:
+        print(f"\nAdding {len(all_chunks)} new chunks to ChromaDB in a single batch...")
+        collection.add(
+            documents=all_chunks,
+            metadatas=all_metadatas,
+            ids=all_ids
+        )
+        print("Batch addition complete.")
+    else:
+        print("\nNo new chunks to add to ChromaDB.")
+
     print("\nIngestion process finished.")
     print(f"Total documents in collection '{COLLECTION_NAME}': {collection.count()}")
