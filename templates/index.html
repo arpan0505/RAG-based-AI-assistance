@@ -124,6 +124,8 @@
     </div>
 
     <script>
+        let conversationHistory = [];
+
         document.getElementById('question-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const questionInput = document.getElementById('question');
@@ -132,7 +134,8 @@
 
             if (!question.trim()) return;
 
-            // Display user message
+            conversationHistory.push({ role: 'user', content: question });
+
             const userMessageDiv = document.createElement('div');
             userMessageDiv.className = 'chat-message user-message';
             userMessageDiv.textContent = question;
@@ -142,7 +145,6 @@
             questionInput.value = '';
             questionInput.focus();
 
-            // Create a new div for the bot's response
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot-message';
             chatBox.appendChild(botMessageDiv);
@@ -151,13 +153,18 @@
             botMessageDiv.appendChild(answerSpan);
             chatBox.scrollTop = chatBox.scrollHeight;
 
+            let botResponseText = '';
+
             try {
                 const response = await fetch('/ask', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ question: question })
+                    body: JSON.stringify({ 
+                        question: question, 
+                        history: conversationHistory 
+                    })
                 });
 
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -168,7 +175,11 @@
 
                 while (true) {
                     const { done, value } = await reader.read();
-                    if (done) break;
+                    
+                    if (done) {
+                        conversationHistory.push({ role: 'assistant', content: botResponseText });
+                        break;
+                    }
                     
                     buffer += decoder.decode(value, { stream: true });
                     const lines = buffer.split('\n');
@@ -179,30 +190,31 @@
                         try {
                             const data = JSON.parse(line);
                             if (data.type === 'token') {
-                                answerSpan.textContent += data.content;
+                                const token = data.content;
+                                answerSpan.textContent += token;
+                                botResponseText += token;
                             } else if (data.type === 'sources') {
                                 const sourcesContainer = document.createElement('div');
                                 sourcesContainer.className = 'sources-container';
-                                
                                 const sourcesHeader = document.createElement('h5');
                                 sourcesHeader.textContent = 'Sources';
                                 sourcesContainer.appendChild(sourcesHeader);
-
                                 const sourcesList = document.createElement('ul');
                                 sourcesList.className = 'sources-list';
-                                
                                 data.content.forEach(source => {
                                     const listItem = document.createElement('li');
-                                    listItem.innerHTML = `<b>Video:</b> ${source.source}<br><b>Timestamp:</b> ${source.start} - ${source.end}`;
-                                    
+                                    const timeLink = document.createElement('a');
+                                    timeLink.href = `/videos/${source.source}#t=${Math.floor(source.start_seconds_raw)}`;
+                                    timeLink.target = '_blank';
+                                    timeLink.textContent = `${source.start} - ${source.end}`;
+                                    listItem.innerHTML = `<b>Video:</b> ${source.source}<br><b>Timestamp:</b> `;
+                                    listItem.appendChild(timeLink);
                                     const summarySpan = document.createElement('span');
                                     summarySpan.className = 'source-summary';
-                                    summarySpan.textContent = `"...${source.summary}..."`;
+                                    summarySpan.textContent = `"${source.summary}"`;
                                     listItem.appendChild(summarySpan);
-
                                     sourcesList.appendChild(listItem);
                                 });
-
                                 sourcesContainer.appendChild(sourcesList);
                                 botMessageDiv.appendChild(sourcesContainer);
                             }
